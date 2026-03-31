@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project one — Lac Nhi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="logo" aria-label="Lac Nhi home">
+      <img src="/assets/ln-logo.png" alt="LN logo" class="brand-logo">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="/#projects">Work</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/resume/">Resume</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="case-study-main">
+    <article class="case-study">
+      <a href="/#projects" class="case-study-back">← Back to projects</a>
+      <header class="case-study-header">
+        <h1 class="case-study-title">Project one</h1>
+        <p class="case-study-meta">Product design · UX research · User research</p>
+      </header>
+
+      <section class="case-study-section">
+        <h2>Overview</h2>
+        <p>Add your project overview and context here.</p>
+      </section>
+
+      <section class="case-study-section">
+        <h2>Problem & goals</h2>
+        <p>Describe the problem space and what you set out to achieve.</p>
+      </section>
+
+      <section class="case-study-section">
+        <h2>Process</h2>
+        <p>Walk through your research, ideation, and design process.</p>
+      </section>
+
+      <section class="case-study-section">
+        <h2>Outcomes</h2>
+        <p>Share results, learnings, and impact.</p>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var navList = document.querySelector('.nav-list');
+      if (!toggle || !navList) return;
+      toggle.addEventListener('click', function () {
+        var open = navList.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open);
+      });
+    })();
+  </script>
+</body>
+</html>
