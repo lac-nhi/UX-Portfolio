@@ -948,16 +948,6 @@ a {
   clip-path: url(#about-matcha-heart-clip);
 }
 
-@media (max-width: 47.9375em) {
-  .hero.hero--about .about-matcha-row {
-    justify-content: center;
-  }
-
-  .hero.hero--about .about-matcha-heart {
-    margin-inline: 0;
-  }
-}
-
 .hero.hero--about .about-matcha-heart-img {
   display: block;
   width: 100%;
@@ -1011,6 +1001,61 @@ a {
     text-align: left;
     flex: 1;
     min-width: 0;
+  }
+}
+
+/* --- About page: mobile responsive fixes --- */
+@media (max-width: 47.9375em) {
+  .hero.hero--about .about-hero-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero.hero--about .about-hero-media {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero.hero--about .about-hero-photo img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero.hero--about .hero-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    overflow: visible;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .hero.hero--about .hero-tagline {
+    word-break: normal;
+    overflow-wrap: normal;
+    white-space: normal;
+    max-width: 100%;
+  }
+
+  .hero.hero--about .about-matcha-row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero.hero--about .about-matcha-heart {
+    width: min(200px, 60vw);
+  }
+
+  .hero.hero--about .about-matcha-location {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-hobbies-track-wrapper {
+    max-width: 100vw;
+    overflow: hidden;
   }
 }
 
