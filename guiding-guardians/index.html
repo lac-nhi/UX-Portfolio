@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body id="top">
   <header class="site-header">
     <a href="/" class="logo" aria-label="Lac Nhi home">
       <img src="/assets/ln-logo.png" alt="LN logo" class="brand-logo">
@@ -259,32 +259,201 @@
             <span class="case-study-phase-label" aria-hidden="true">Prototype</span>
             <h3 class="case-study-prototype-title reveal-hidden">Prototype</h3>
             <div class="case-study-hero-video case-study-prototype-video reveal-hidden">
-              <video src="/assets/guiding-guardians-prototype-demo.mov" autoplay loop muted playsinline aria-label="Prototype walkthrough video"></video>
+              <video src="/assets/guiding-guardians-prototype-demo.mp4" autoplay loop muted playsinline aria-label="Prototype walkthrough video"></video>
             </div>
       </section>
 
       <section class="case-study-section" id="test">
             <span class="case-study-phase-label" aria-hidden="true">Test</span>
-            <h2 class="reveal-hidden">Test</h2>
-            <p class="reveal-hidden"><strong>Usability testing</strong> was conducted to ensure the design met user needs. Key insights and revisions:</p>
-            <ol class="reveal-hidden">
-              <li><strong>Copy clarity:</strong> On the home page, users were confused by “learning over answers”—e.g., “Does that mean I get the answer first and then learn how to solve it?” We improved the UX copy.</li>
-              <li><strong>Question display:</strong> Users were unsure where the question would appear if multiple were asked. We changed the layout so the user’s question and the chatbot’s responses are shown as chat bubbles.</li>
-              <li><strong>Example format:</strong> Users didn’t expect the example to appear as a pop-up instead of following the chat layout. We changed the example to appear as a chat bubble.</li>
-              <li><strong>Input affordance:</strong> The grey field for typing wasn’t clearly a text box. We added sample prompts to click and text to indicate that users can type another question there.</li>
+            <p class="case-study-ideate-eyebrow reveal-hidden">Testing the solution</p>
+            <h2 class="case-study-ideate-title reveal-hidden">Usability Test</h2>
+            <p class="reveal-hidden">After designing the wireframes, <strong>6 rounds of usability testing was conducted</strong> to learn more about the functionality of our product. After testing, we used the insights to make appropriate revisions to the product.</p>
+            <h3 class="case-study-user-journey-title reveal-hidden">Key Insights &amp; Revisions</h3>
+            <ol class="reveal-hidden case-study-test-revisions-list">
+              <li class="case-study-test-revision-item case-study-test-revision-item--copy">
+                <div class="case-study-test-revision-item-text">
+                  <strong>Copy clarity:</strong> On the home page, users were confused by “learning over answers.”<br />A user asked “Does that mean I get the answer first and then learn how to solve it?” We improved the UX copy.
+                </div>
+                <figure class="case-study-copy-revision" aria-label="Copy revision: Original versus revised home page messaging">
+                  <div class="case-study-copy-revision-stack">
+                    <div class="case-study-copy-revision-labels-row">
+                      <span class="case-study-copy-revision-label case-study-copy-revision-label--original">Original</span>
+                      <span class="case-study-copy-revision-label case-study-copy-revision-label--revised">Revised</span>
+                    </div>
+                    <img
+                      src="/assets/guiding-guardians-copy-clarity-revision.png"
+                      alt="Side by side cards: Original shows Learning over answers; Revised shows Step-by-step learning. Same supporting body copy about step-by-step walkthroughs."
+                      width="938"
+                      height="281"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </figure>
+              </li>
+              <li class="case-study-test-revision-item case-study-test-revision-item--question-display">
+                <div class="case-study-test-revision-body">
+                  <strong>Question display:</strong> Users were unsure where the question would appear if multiple were asked. We changed the layout so the user’s question and the chatbot’s responses are shown as chat bubbles.
+                </div>
+                <figure class="case-study-question-display-figure" aria-label="Question display revision: boxed question versus chat-style bubble">
+                  <div class="case-study-question-display-stack">
+                    <span class="case-study-question-display-label case-study-question-display-label--original">Original</span>
+                    <span class="case-study-question-display-label-gap" aria-hidden="true"></span>
+                    <span class="case-study-question-display-label case-study-question-display-label--revised">Revised</span>
+                    <div class="case-study-question-display-images" role="group" aria-label="Before and after comparison">
+                      <img
+                        class="case-study-question-display-img case-study-question-display-img--original"
+                        src="/assets/guiding-guardians-question-display-original.png"
+                        alt="Original layout: Question label beside a two-line factoring prompt in a bordered box."
+                        width="560"
+                        height="156"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <img
+                        class="case-study-question-display-arrow"
+                        src="/assets/guiding-guardians-question-display-arrow.png"
+                        alt=""
+                        width="92"
+                        height="92"
+                        loading="lazy"
+                        decoding="async"
+                        role="presentation"
+                      />
+                      <img
+                        class="case-study-question-display-img case-study-question-display-img--revised"
+                        src="/assets/guiding-guardians-question-display-revised.png"
+                        alt="Revised layout: the same question shown as a single line inside a rounded chat-style bubble."
+                        width="623"
+                        height="81"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                  </div>
+                </figure>
+              </li>
+              <li class="case-study-test-revision-item case-study-test-revision-item--example-format">
+                <div class="case-study-test-revision-body">
+                  <strong>Example format:</strong> Users didn’t expect the example to appear as a pop-up instead of following the chat layout. We changed the example to appear as a chat bubble.
+                </div>
+                <figure class="case-study-example-format-figure" aria-label="Example format revision: tabbed modal versus in-flow chat bubble">
+                  <div class="case-study-example-format-stack">
+                    <span class="case-study-example-format-label case-study-example-format-label--original">Original</span>
+                    <span class="case-study-example-format-label-gap" aria-hidden="true"></span>
+                    <span class="case-study-example-format-label case-study-example-format-label--revised">Revised</span>
+                    <div class="case-study-example-format-images" role="group" aria-label="Before and after comparison">
+                      <img
+                        class="case-study-example-format-img case-study-example-format-img--original"
+                        src="/assets/guiding-guardians-example-format-original.png"
+                        alt="Original design: Example tab selected with gray panel, close control, and numbered factoring walkthrough."
+                        width="684"
+                        height="532"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <img
+                        class="case-study-example-format-arrow"
+                        src="/assets/guiding-guardians-example-format-arrow.png"
+                        alt=""
+                        width="92"
+                        height="92"
+                        loading="lazy"
+                        decoding="async"
+                        role="presentation"
+                      />
+                      <img
+                        class="case-study-example-format-img case-study-example-format-img--revised"
+                        src="/assets/guiding-guardians-example-format-revised.png"
+                        alt="Revised design: Another example pill and green rounded bubble with the same factoring content in chat style."
+                        width="1024"
+                        height="448"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                  </div>
+                </figure>
+              </li>
+              <li class="case-study-test-revision-item case-study-test-revision-item--input-affordance">
+                <div class="case-study-test-revision-body">
+                  <strong>Input affordance:</strong> The grey field for typing wasn’t clearly a text box. We added sample prompts to click and text to indicate that users can type another question there.
+                </div>
+                <figure class="case-study-input-affordance-figure" aria-label="Input affordance revision: plain field versus segmented actions and prompt">
+                  <div class="case-study-input-affordance-stack">
+                    <span class="case-study-input-affordance-label case-study-input-affordance-label--original">Original</span>
+                    <span class="case-study-input-affordance-label-gap" aria-hidden="true"></span>
+                    <span class="case-study-input-affordance-label case-study-input-affordance-label--revised">Revised</span>
+                    <div class="case-study-input-affordance-images" role="group" aria-label="Before and after comparison">
+                      <img
+                        class="case-study-input-affordance-img case-study-input-affordance-img--original"
+                        src="/assets/guiding-guardians-input-affordance-original.png"
+                        alt="Original: a single empty pill-shaped grey input with light border."
+                        width="716"
+                        height="47"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <img
+                        class="case-study-input-affordance-arrow"
+                        src="/assets/guiding-guardians-input-affordance-arrow.png"
+                        alt=""
+                        width="92"
+                        height="92"
+                        loading="lazy"
+                        decoding="async"
+                        role="presentation"
+                      />
+                      <img
+                        class="case-study-input-affordance-img case-study-input-affordance-img--revised"
+                        src="/assets/guiding-guardians-input-affordance-revised.png"
+                        alt="Revised: segmented pill with Another Example, Simplify, More Info, Resources, and a pill input with Ask another question placeholder."
+                        width="717"
+                        height="191"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                  </div>
+                </figure>
+              </li>
             </ol>
-            <p class="reveal-hidden"><em>Add images: Wireframes, usability testing highlights, revision screens.</em></p>
       </section>
 
       <section class="case-study-section">
-            <span class="case-study-phase-label" aria-hidden="true">Outcomes</span>
-            <h2 class="reveal-hidden">Outcomes</h2>
-            <p class="reveal-hidden"><strong>Final product:</strong> Guiding Guardians enables guardians to access a homework-help tool that supports their tutoring approach. We designed to avoid easily giving away answers and to provide multiple resources and follow-up options at each step.</p>
-            <p class="reveal-hidden"><strong>Next steps</strong> (given the 4-day constraint): fully responsive product, mobile app version, language translations for guardians with language barriers, filtering by grade level and subject, user profiles, and custom domain.</p>
-            <p class="reveal-hidden"><strong>Key takeaways:</strong> Working in a cross-functional team on a short deadline taught me how to collaborate closely with other UX designers and with developers (I joined their live coding sessions to see how everything came together). We had to prioritize for the greatest impact. Winning crowd favorite was memorable—guests who were parents shared that they often use online tutoring help and found the concept useful.</p>
+            <span class="case-study-phase-label" aria-hidden="true">Final Product</span>
+            <h3 class="case-study-prototype-title reveal-hidden">Final Product</h3>
+            <p class="reveal-hidden">Guiding Guardians enables guardians to access a homework-help tool that supports their tutoring approach. We designed to avoid easily giving away answers and to provide multiple resources and follow-up options at each step.</p>
+            <div class="case-study-hero-video case-study-prototype-video reveal-hidden">
+              <video src="/assets/guiding-guardians-demo.mp4" autoplay loop muted playsinline aria-label="Guiding Guardians product demo"></video>
+            </div>
       </section>
+
+      <section class="case-study-section" id="outcomes" aria-labelledby="outcomes-heading">
+            <span class="case-study-phase-label" aria-hidden="true">Outcomes</span>
+            <h3 id="outcomes-heading" class="case-study-prototype-title reveal-hidden">Outcomes</h3>
+            <p class="reveal-hidden"><span class="case-study-outcomes-pencil" aria-hidden="true">✏️ </span><strong>The impact</strong> of our design is enabling guardians to access a homework help tool to aid their approach to tutoring school subjects. We did so by designing with the thought in mind to not easily give away answers to homework questions. We also thought of ways to provide multiple resources and answers if the student or guardian faces any difficulty at any of the steps.</p>
+            <p class="reveal-hidden"><span class="case-study-outcomes-pencil" aria-hidden="true">✏️ </span><strong>Winning crowd favorite</strong> was extremely memorable because we got to hear a lot of positive feedback and received validation that we created something useful.</p>
+            <p class="reveal-hidden"><span class="case-study-outcomes-pencil" aria-hidden="true">✏️ </span><strong>Next steps</strong> (given the 4-day constraint): fully responsive product, mobile app version, language translations for guardians with language barriers, filtering by grade level and subject, user profiles, and custom domain.</p>
+            <p class="reveal-hidden"><span class="case-study-outcomes-pencil" aria-hidden="true">✏️ </span><strong>Key takeaways:</strong> Working in a cross-functional team on a short deadline taught me how to collaborate closely with other UX designers and with developers (I joined their live coding sessions to see how everything came together). We had to prioritize for the greatest impact. Winning crowd favorite was memorable—guests who were parents shared that they often use online tutoring help and found the concept useful.</p>
+      </section>
+
     </article>
   </main>
+
+  <footer class="site-footer">
+    <nav class="case-study-back-to-top-nav" aria-label="Back to top">
+      <a href="#top" class="case-study-back-to-top">Back to the Top <span class="case-study-back-to-top-arrow" aria-hidden="true">↑</span></a>
+    </nav>
+    <nav class="site-footer-nav" aria-label="Footer">
+      <ul class="site-footer-list">
+        <li><a href="/#projects">Work</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/resume/">Resume</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
 
   <script>
     (function () {
@@ -508,7 +677,8 @@
             (tag === 'DIV' && child.classList && (
               child.classList.contains('case-study-define-persona-quote-block') ||
               child.classList.contains('case-study-wireframe-carousel') ||
-              child.classList.contains('case-study-define-solution-band')
+              child.classList.contains('case-study-define-solution-band') ||
+              child.classList.contains('case-study-prototype-video')
             ))
           ) {
             blocks.push(child);
