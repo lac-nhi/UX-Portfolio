@@ -2412,33 +2412,6 @@ a {
   width: auto;
 }
 
-@media (max-width: 36em) {
-  .case-study-question-display-images {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
-    row-gap: 0.75rem;
-  }
-
-  .case-study-question-display-img--original {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: center;
-  }
-
-  .case-study-question-display-arrow {
-    grid-column: 1;
-    grid-row: 2;
-    transform: rotate(90deg);
-  }
-
-  .case-study-question-display-img--revised {
-    grid-column: 1;
-    grid-row: 3;
-    justify-self: center;
-  }
-}
-
 /* Example format — wider than question display so the revised bubble is easier to read */
 .case-study-example-format-figure {
   margin: clamp(1.25rem, 3vw, 1.75rem) auto 0;
@@ -2523,47 +2496,6 @@ a {
   align-self: center;
   width: auto;
   max-width: 100%;
-}
-
-@media (max-width: 36em) {
-  .case-study-example-format-stack {
-    grid-template-columns: 1fr;
-    row-gap: 0.75rem;
-  }
-
-  .case-study-example-format-label--original {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: center;
-  }
-
-  .case-study-example-format-label-gap {
-    display: none;
-  }
-
-  .case-study-example-format-label--revised {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: center;
-  }
-
-  .case-study-example-format-img--original {
-    grid-column: 1;
-    grid-row: 3;
-    justify-self: center;
-  }
-
-  .case-study-example-format-arrow {
-    grid-column: 1;
-    grid-row: 4;
-    transform: rotate(90deg);
-  }
-
-  .case-study-example-format-img--revised {
-    grid-column: 1;
-    grid-row: 5;
-    justify-self: center;
-  }
 }
 
 /* Input affordance — Original | arrow | Revised (unified grid; assets are ~equal width) */
@@ -2657,10 +2589,114 @@ a {
   max-width: 100%;
 }
 
-@media (max-width: 36em) {
+@media (max-width: 47.9375em) {
+  /* Copy revision */
+  .case-study-copy-revision-stack {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .case-study-copy-revision-label--original {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .case-study-copy-revision img {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  /* Question display */
+  .case-study-question-display-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-question-display-label--original {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .case-study-question-display-label-gap {
+    display: none;
+  }
+
+  .case-study-question-display-label--revised {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+  }
+
+  .case-study-question-display-images {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    row-gap: 0.75rem;
+  }
+
+  .case-study-question-display-img--original {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .case-study-question-display-arrow {
+    grid-column: 1;
+    grid-row: 2;
+    transform: rotate(90deg);
+  }
+
+  .case-study-question-display-img--revised {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+  }
+
+  /* Example format */
+  .case-study-example-format-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-example-format-label--original {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .case-study-example-format-label-gap {
+    display: none;
+  }
+
+  .case-study-example-format-label--revised {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+  }
+
+  .case-study-example-format-img--original {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .case-study-example-format-arrow {
+    grid-column: 1;
+    grid-row: 4;
+    transform: rotate(90deg);
+  }
+
+  .case-study-example-format-img--revised {
+    grid-column: 1;
+    grid-row: 5;
+    justify-self: center;
+  }
+
+  /* Input affordance */
   .case-study-input-affordance-stack {
     grid-template-columns: 1fr;
-    row-gap: 0.75rem;
   }
 
   .case-study-input-affordance-label--original {
@@ -2675,13 +2711,13 @@ a {
 
   .case-study-input-affordance-label--revised {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
     justify-self: center;
   }
 
   .case-study-input-affordance-img--original {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     justify-self: center;
   }
 
