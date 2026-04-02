@@ -1800,7 +1800,7 @@ a {
   margin-bottom: 2.5rem;
   background: #d1bbfd;
   box-sizing: border-box;
-  padding: 3rem 1.5rem;
+  padding: 3rem 0;
 }
 
 .case-study-brainstorm-content {
@@ -1809,6 +1809,15 @@ a {
   margin-right: auto;
   width: 100%;
   box-sizing: border-box;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 48em) {
+  .case-study-brainstorm-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .case-study-brainstorm-inner {
@@ -1836,7 +1845,7 @@ a {
 
 .case-study-brainstorm-mark {
   display: block;
-  max-width: min(38rem, 100%);
+  max-width: min(32rem, 100%);
   margin: -5.6rem auto 1.6rem;
 }
 
@@ -1856,7 +1865,7 @@ a {
     margin-left: -1.25rem;
     margin-right: -1.25rem;
     margin-top: 0;
-    padding: 3rem 1.25rem;
+    padding: 3rem 0;
   }
 }
 
