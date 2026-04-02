@@ -826,13 +826,17 @@ a {
   padding-inline: clamp(3.5rem, 8vw, 6.5rem);
 }
 
+.contact-heading-letters {
+  display: inline-block;
+}
+
 .contact-social-links {
   position: relative;
   z-index: 2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2.1rem;
   margin-top: 2.1rem;
 }
 
