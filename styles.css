@@ -1273,6 +1273,7 @@ a {
 .case-study-overview-banner > .case-study-phase-label,
 .case-study-challenge-banner > .case-study-phase-label,
 .case-study-brainstorm-banner > .case-study-phase-label,
+.case-study-brainstorm-content > .case-study-phase-label,
 #research.case-study-research-band > .case-study-phase-label {
   display: block;
   width: fit-content;
@@ -1802,6 +1803,14 @@ a {
   padding: 3rem 1.5rem;
 }
 
+.case-study-brainstorm-content {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .case-study-brainstorm-inner {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -1809,7 +1818,7 @@ a {
 
 .case-study-brainstorm-title {
   margin: 0 0 0.65rem;
-  font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+  font-size: clamp(1.5rem, 3.2vw, 1.9rem);
   font-weight: 700;
   line-height: 1.25;
   color: #111;
@@ -1823,6 +1832,12 @@ a {
   line-height: 1.55;
   color: #111;
   text-align: left;
+}
+
+.case-study-brainstorm-mark {
+  display: block;
+  max-width: min(38rem, 100%);
+  margin: -5.6rem auto 1.6rem;
 }
 
 .case-study-brainstorm-quote {
