@@ -210,14 +210,46 @@
         </div>
       </section>
 
-      <div class="case-study-hero-image case-study-hero-image--after-define reveal-hidden">
-        <img
-          src="/assets/resonance-thumb-hero.png"
-          alt="Resonance — smart ring and mobile app showing the wellness dashboard"
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
+      <section class="case-study-section case-study-section--resonance-intro" aria-labelledby="resonance-intro-what-heading">
+        <div class="case-study-resonance-intro-layout reveal-hidden">
+          <div class="case-study-resonance-intro-media">
+            <div class="case-study-resonance-intro-media-inner">
+              <img
+                class="case-study-resonance-intro-ring-img"
+                src="/assets/resonance-intro-ring.png?v=5"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="case-study-resonance-intro-app-img"
+                src="/assets/resonance-intro-app.png?v=5"
+                alt="Resonance companion app — dashboard with sync ring and Synchrony graph"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+          <div class="case-study-resonance-intro-copy">
+            <div class="case-study-resonance-intro-block">
+              <h3 id="resonance-intro-what-heading">What is Resonance?</h3>
+              <p>Resonance is a smart ring and companion app that makes <strong>physiological synchrony legible</strong> — for the first time.</p>
+            </div>
+            <div class="case-study-resonance-intro-block">
+              <h3>The Problem</h3>
+              <p>We spend much of our lives trying to understand <strong>how we feel</strong>—but many of those feelings are <strong>hard to read or explain.</strong></p>
+            </div>
+            <div class="case-study-resonance-intro-block">
+              <h3>The Shift</h3>
+              <p><strong>Disconnection</strong> doesn’t happen all at once; it appears as a <strong>subtle drift</strong> in our relationships, energy, and well-being through signals <strong>we sense but can’t interpret.</strong></p>
+            </div>
+            <div class="case-study-resonance-intro-block">
+              <h3>The Solution</h3>
+              <p><strong>Resonance</strong> makes these <strong>invisible signals visible</strong>, helping people understand and act on their <strong>emotions, relationships, and energy.</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="case-study-section">
         <h2 class="reveal-hidden">Problem & goals</h2>
@@ -439,11 +471,6 @@
         });
       });
 
-      var heroAfterDefine = document.querySelector('.case-study-hero-image--after-define');
-      observeOnce(heroAfterDefine, function () {
-        revealAt(heroAfterDefine, 0);
-      });
-
       document.querySelectorAll('.case-study-section').forEach(function (section) {
         if (section.classList.contains('case-study-section--requirements')) return;
 
@@ -462,7 +489,8 @@
               (child.classList.contains('case-study-define-persona-quote-block') ||
                 child.classList.contains('case-study-wireframe-carousel') ||
                 child.classList.contains('case-study-define-solution-band') ||
-                child.classList.contains('case-study-prototype-video')))
+                child.classList.contains('case-study-prototype-video') ||
+                child.classList.contains('case-study-resonance-intro-layout')))
           ) {
             blocks.push(child);
           }

@@ -1377,17 +1377,6 @@ a {
   height: auto;
 }
 
-.case-study-hero-image--after-define {
-  margin-top: -1.35rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Optical center: PNG reads heavy on the right: nudge left vs heading block above */
-.case-study-hero-image--after-define img {
-  transform: translateX(clamp(-1.1rem, -3.25vw, -2.65rem));
-}
-
 .case-study-header {
   margin-bottom: 2rem;
 }
@@ -2165,6 +2154,125 @@ a {
 .case-study-section--requirements > p {
   font-size: clamp(1.05rem, 2.1vw, 1.2rem);
   line-height: 1.6;
+}
+
+/* Resonance — intro: text wraps beside ring + phone (float right; mockup reference) */
+.case-study-section--resonance-intro .case-study-resonance-intro-layout {
+  display: flow-root;
+}
+
+.case-study-section--resonance-intro .case-study-resonance-intro-media,
+.case-study-section--resonance-intro .case-study-resonance-intro-ring-img,
+.case-study-section--resonance-intro .case-study-resonance-intro-app-img {
+  background: transparent;
+}
+
+@media (min-width: 48em) {
+  .case-study-section--resonance-intro .case-study-resonance-intro-media {
+    float: right;
+    width: min(46%, 28rem);
+    max-width: 100%;
+    margin: 0 0 0.5rem clamp(1rem, 2.75vw, 2rem);
+    shape-outside: ellipse(88% 58% at 68% 48%);
+  }
+
+  .case-study-section--resonance-intro .case-study-resonance-intro-media-inner {
+    position: relative;
+    width: 100%;
+    min-height: clamp(20rem, 58vh, 32rem);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .case-study-section--resonance-intro .case-study-resonance-intro-app-img {
+    display: block;
+    width: auto;
+    max-width: min(100%, 14.5rem);
+    height: auto;
+    max-height: min(32rem, 78vh);
+    margin-left: auto;
+    border-radius: 0.65rem;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .case-study-section--resonance-intro .case-study-resonance-intro-ring-img {
+    position: absolute;
+    left: clamp(-2.35rem, -14%, -0.5rem);
+    top: 44%;
+    transform: translateY(-50%);
+    width: clamp(5.25rem, 44%, 9.75rem);
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .case-study-section--resonance-intro .case-study-resonance-intro-copy {
+    min-width: min(12rem, 100%);
+  }
+}
+
+@media (max-width: 47.9375em) {
+  .case-study-section--resonance-intro .case-study-resonance-intro-media {
+    float: none;
+    width: 100%;
+    max-width: min(22rem, 100%);
+    margin: 0 auto 1.25rem;
+    shape-outside: none;
+  }
+
+  .case-study-section--resonance-intro .case-study-resonance-intro-media-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 0;
+  }
+
+  .case-study-section--resonance-intro .case-study-resonance-intro-app-img {
+    display: block;
+    width: 100%;
+    max-width: 16rem;
+    height: auto;
+    border-radius: 0.65rem;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.1);
+    order: 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .case-study-section--resonance-intro .case-study-resonance-intro-ring-img {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: min(11rem, 55vw);
+    height: auto;
+    z-index: auto;
+    order: 2;
+  }
+}
+
+.case-study-section--resonance-intro .case-study-resonance-intro-block + .case-study-resonance-intro-block {
+  margin-top: clamp(1.35rem, 3vw, 2rem);
+}
+
+.case-study-section--resonance-intro h3 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.2rem, 2.55vw, 1.48rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: #6b3fa3;
+}
+
+.case-study-section--resonance-intro p {
+  margin: 0;
+  font-size: clamp(1.05rem, 2.1vw, 1.2rem);
+  line-height: 1.6;
+  color: var(--text);
 }
 
 /* Test section — body copy matches Challenge / Research / User Journey / Define scale */
