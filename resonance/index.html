@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project one — Lac Nhi</title>
+  <title>Resonance — Lac Nhi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body id="top">
   <header class="site-header">
     <a href="/" class="logo" aria-label="Lac Nhi home">
       <img src="/assets/ln-logo.png" alt="LN logo" class="brand-logo">
@@ -18,7 +18,7 @@
       <ul class="nav-list">
         <li><a href="/#projects">Work</a></li>
         <li><a href="/about/">About</a></li>
-        <li><a href="/resume/">Resume</a></li>
+        <li><a href="/assets/LN-UX-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
       <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -31,42 +31,438 @@
 
   <main class="case-study-main">
     <article class="case-study">
-      <a href="/#projects" class="case-study-back">← Back to projects</a>
+      <a href="/#projects" class="case-study-back reveal-hidden">← Back to projects</a>
+
+      <div class="case-study-hero-image reveal-hidden">
+        <img
+          src="/assets/resonance-thumb-hero.png"
+          alt="Resonance — smart ring and mobile app showing the wellness dashboard"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+
       <header class="case-study-header">
-        <h1 class="case-study-title">Project one</h1>
-        <p class="case-study-meta">Product design · UX research · User research</p>
+        <h1 class="case-study-title reveal-hidden">Resonance</h1>
+        <p class="case-study-meta reveal-hidden">FigBuild 2026 Hackathon · UX Designer · Speculative & Wearable Design</p>
+        <p class="case-study-lead reveal-hidden">Designed a speculative wearable and companion app in a 4-day hackathon that visualizes physiological synchrony to support self-awareness and relational wellness. Executed concept definition, UX design, and prototyping in Figma to translate complex biometric data into intuitive, user-facing insights.</p>
+        <a href="https://www.figma.com/make/uVVJIm6yGTXZQ0XbyZnZfX/figbuild-2026-MAKE?t=7Oox0k0wHKL21jT5-1" class="case-study-view-site case-study-view-site--prototype reveal-hidden" target="_blank" rel="noopener noreferrer">View Prototype</a>
       </header>
 
+      <section class="case-study-overview-banner case-study-overview-banner--resonance" aria-labelledby="overview-banner-heading">
+        <div class="case-study-overview-banner-content">
+          <span class="case-study-phase-label case-study-phase-label--on-purple reveal-hidden" aria-hidden="true">Overview</span>
+          <div class="case-study-overview-inner">
+          <div class="case-study-overview-cell case-study-overview-cell--overview reveal-hidden">
+            <h2 id="overview-banner-heading" class="case-study-overview-title">Overview</h2>
+            <p>FigBuild 2026 challenged teams to design a tool that tracks, measures, visualizes or quantifies an aspect of human sensory experience.</p>
+            <p>We focused on <strong>physiological synchrony</strong>: how signals from the body could be made legible in a companion experience, without reducing people to raw metrics.</p>
+          </div>
+          <div class="case-study-overview-cell case-study-overview-cell--role reveal-hidden">
+            <h2 class="case-study-overview-title">Role</h2>
+            <ul class="case-study-overview-list">
+              <li>UI/UX Design</li>
+              <li>Speculative Research</li>
+              <li>Prototyping</li>
+            </ul>
+          </div>
+          <div class="case-study-overview-cell case-study-overview-cell--team reveal-hidden">
+            <h2 class="case-study-overview-title">Team</h2>
+            <ul class="case-study-overview-list">
+              <li>Lac Nhi Nguyen</li>
+              <li>Emma Breck</li>
+              <li>Tarun Suresh</li>
+            </ul>
+          </div>
+          <div class="case-study-overview-cell case-study-overview-cell--solution reveal-hidden">
+            <h3 class="case-study-overview-title">Solution</h3>
+            <p><strong>Resonance</strong> pairs a speculative wearable with a companion app that visualizes synchrony and rhythm—supporting self-awareness and relational wellness through calm, human-centered data storytelling.</p>
+          </div>
+          <div class="case-study-overview-cell case-study-overview-cell--duration reveal-hidden">
+            <h3 class="case-study-overview-title">Duration</h3>
+            <p>March 2026 (4 day sprint)</p>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-section case-study-section--requirements" id="requirements" aria-labelledby="requirements-heading">
+        <span class="case-study-phase-label reveal-hidden" aria-hidden="true">Requirements</span>
+        <h2 id="requirements-heading" class="reveal-hidden">Hackathon Requirements</h2>
+        <h3 class="reveal-hidden">The Challenge</h3>
+        <p class="reveal-hidden">Design a tool that <strong>tracks, measures, visualizes</strong> or <strong>quantifies</strong> an aspect of human sensory experience. Within the tool, provide the ability to detect, enhance, or manipulate those same sensory inputs.</p>
+        <h3 class="reveal-hidden">Context</h3>
+        <p class="reveal-hidden">The <strong>“quantified self” movement</strong> has reshaped how we understand our <strong>bodies and behaviors</strong>, but current tools only begin to capture this potential. Early designers of <strong>fitness trackers</strong> had to imagine <strong>capabilities</strong>—like <strong>continuous sensing</strong> and <strong>embedded technology</strong>—long before they were technically possible. Following that same spirit of <strong>speculation</strong>, this challenge asks us to envision the <strong>next frontier of self-knowledge</strong> by designing for <strong>sensory capabilities that do not yet exist.</strong></p>
+        <h3 class="reveal-hidden">Our Mission</h3>
+        <p class="reveal-hidden">Identify something <strong>intangible, invisible, or previously unmeasurable</strong> about the <strong>human sensory experience</strong> and design a <strong>speculative tool to track and influence it.</strong> This tool should be designed to support a <strong>wellness goal</strong> or <strong>behavioral change</strong> for an <strong>individual or a group.</strong></p>
+        <h3 class="reveal-hidden">Design Requirements</h3>
+        <p class="reveal-hidden">Your solution should feel <strong>novel</strong> and <strong>future forward</strong>, not a remix of an existing app and not something you generate on the first go. This is a <strong>speculative design challenge rooted in human need.</strong></p>
+      </section>
+
+      <section class="case-study-brainstorm-banner" aria-labelledby="brainstorm-heading">
+        <span class="case-study-phase-label case-study-phase-label--on-purple reveal-hidden" aria-hidden="true">Brainstorming</span>
+        <div class="case-study-brainstorm-inner">
+          <h2 id="brainstorm-heading" class="case-study-brainstorm-title reveal-hidden">Brainstorming</h2>
+          <p class="case-study-brainstorm-lead reveal-hidden">Answering the big question:</p>
+          <p class="case-study-brainstorm-quote reveal-hidden">“What should we build?”</p>
+        </div>
+      </section>
+
+      <section class="case-study-idea-panel" aria-labelledby="idea1-heading">
+        <div class="case-study-idea-panel-inner">
+          <figure class="case-study-idea-panel-figure reveal-hidden">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="/assets/resonance-social-battery-brainstorm.png"
+              aria-label="Enlarge Social Battery Monitor brainstorm diagram"
+            >
+              <img
+                src="/assets/resonance-social-battery-brainstorm.png"
+                alt="Brainstorm board: Social Battery Monitor at the center with sticky notes for Manipulation, Wellness Goal, Idea, What it measures, and Visualization."
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <div class="case-study-idea-panel-copy">
+            <h2 id="idea1-heading" class="case-study-idea-panel-title reveal-hidden">
+              <span class="case-study-idea-panel-title-accent">Idea 1:</span><span class="case-study-idea-panel-title-text"> Social Battery Monitor</span>
+            </h2>
+            <h3 class="case-study-idea-panel-subtitle reveal-hidden">Pros</h3>
+            <ul class="case-study-idea-panel-list reveal-hidden">
+              <li>Helps prevent social burnout</li>
+              <li>Feasible implementation</li>
+              <li>Addresses a real, relatable problem</li>
+              <li>Makes the intangible visible</li>
+              <li>Strong visualization concept</li>
+            </ul>
+            <h3 class="case-study-idea-panel-subtitle reveal-hidden">Cons</h3>
+            <ul class="case-study-idea-panel-list reveal-hidden">
+              <li>There’s existing similar products, might be a “remix”</li>
+              <li>Oversimplifying relationships</li>
+              <li>Needs a stronger “future forward” concept</li>
+              <li>Overlap with current existing wellness tools</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-idea-panel" aria-labelledby="idea2-heading">
+        <div class="case-study-idea-panel-inner">
+          <figure class="case-study-idea-panel-figure reveal-hidden">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="/assets/resonance-sensory-overload-brainstorm.png"
+              aria-label="Enlarge Sensory Overload Wear brainstorm diagram"
+            >
+              <img
+                src="/assets/resonance-sensory-overload-brainstorm.png"
+                alt="Brainstorm board: Sensory Overload Wear at the center with sticky notes for Visualization, What it measures, Wellness Goal, and Idea."
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <div class="case-study-idea-panel-copy">
+            <h2 id="idea2-heading" class="case-study-idea-panel-title reveal-hidden">
+              <span class="case-study-idea-panel-title-accent">Idea 2:</span><span class="case-study-idea-panel-title-text"> Sensory Overload Wear</span>
+            </h2>
+            <h3 class="case-study-idea-panel-subtitle reveal-hidden">Pros</h3>
+            <ul class="case-study-idea-panel-list reveal-hidden">
+              <li>Multi-sensory approach</li>
+              <li>Immediate, actionable intervention</li>
+              <li>Clear and meaningful use case</li>
+              <li>Future-forward idea if combined into one product.</li>
+            </ul>
+            <h3 class="case-study-idea-panel-subtitle reveal-hidden">Cons</h3>
+            <ul class="case-study-idea-panel-list reveal-hidden">
+              <li>Overlap with existing products (e.g. noise cancelling headphones) might be a “remix”</li>
+              <li>Lacks deeper “invisible sensing”</li>
+              <li>Familiar interaction model</li>
+              <li>Limited speculative leap</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-decision-banner" aria-labelledby="decision-heading">
+        <div class="case-study-decision-inner">
+          <span class="case-study-phase-label case-study-phase-label--on-purple reveal-hidden" aria-hidden="true">Define</span>
+          <h2 id="decision-heading" class="case-study-decision-title reveal-hidden">What we decided to design</h2>
+          <p class="case-study-decision-dots reveal-hidden" aria-hidden="true">
+            <span class="case-study-decision-dot case-study-decision-dot--1">.</span><span class="case-study-decision-dot case-study-decision-dot--2">.</span><span class="case-study-decision-dot case-study-decision-dot--3">.</span>
+          </p>
+          <p class="case-study-decision-subtitle reveal-hidden">
+            <span class="case-study-decision-subtitle-text">Resonance— A Wearable Ring &amp; Companion App</span>
+          </p>
+        </div>
+      </section>
+
+      <div class="case-study-hero-image case-study-hero-image--after-define reveal-hidden">
+        <img
+          src="/assets/resonance-thumb-hero.png"
+          alt="Resonance — smart ring and mobile app showing the wellness dashboard"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+
       <section class="case-study-section">
-        <h2>Overview</h2>
-        <p>Add your project overview and context here.</p>
+        <h2 class="reveal-hidden">Problem & goals</h2>
+        <p class="reveal-hidden">Describe the problem space and what you set out to achieve.</p>
       </section>
 
       <section class="case-study-section">
-        <h2>Problem & goals</h2>
-        <p>Describe the problem space and what you set out to achieve.</p>
+        <h2 class="reveal-hidden">Process</h2>
+        <p class="reveal-hidden">Walk through your research, ideation, and design process.</p>
       </section>
 
       <section class="case-study-section">
-        <h2>Process</h2>
-        <p>Walk through your research, ideation, and design process.</p>
+        <h2 class="reveal-hidden">Outcomes</h2>
+        <p class="reveal-hidden">Share results, learnings, and impact.</p>
       </section>
 
-      <section class="case-study-section">
-        <h2>Outcomes</h2>
-        <p>Share results, learnings, and impact.</p>
-      </section>
     </article>
   </main>
+
+  <footer class="site-footer">
+    <nav class="case-study-back-to-top-nav" aria-label="Back to top">
+      <a href="#top" class="case-study-back-to-top">Back to the Top <span class="case-study-back-to-top-arrow" aria-hidden="true">↑</span></a>
+    </nav>
+    <nav class="site-footer-nav" aria-label="Footer">
+      <ul class="site-footer-list">
+        <li><a href="/#projects">Work</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/assets/LN-UX-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
 
   <script>
     (function () {
       var toggle = document.querySelector('.nav-toggle');
       var navList = document.querySelector('.nav-list');
-      if (!toggle || !navList) return;
-      toggle.addEventListener('click', function () {
-        var open = navList.classList.toggle('is-open');
-        toggle.setAttribute('aria-expanded', open);
+      if (toggle && navList) {
+        toggle.addEventListener('click', function () {
+          var open = navList.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open);
+        });
+      }
+
+      var zoomButtons = document.querySelectorAll('.case-study-zoomable');
+      if (zoomButtons && zoomButtons.length) {
+        var overlay = document.createElement('div');
+        overlay.className = 'case-study-lightbox';
+        overlay.setAttribute('role', 'dialog');
+        overlay.setAttribute('aria-modal', 'true');
+        overlay.setAttribute('aria-hidden', 'true');
+
+        overlay.innerHTML =
+          '<div class="case-study-lightbox-backdrop" data-close="true"></div>' +
+          '<div class="case-study-lightbox-panel" role="document">' +
+            '<button type="button" class="case-study-lightbox-close" aria-label="Close image" data-close="true">×</button>' +
+            '<img class="case-study-lightbox-img" alt="Zoomed image" />' +
+          '</div>';
+
+        document.body.appendChild(overlay);
+
+        var lightboxImg = overlay.querySelector('.case-study-lightbox-img');
+        var lastActiveEl = null;
+
+        function openLightbox(src, alt) {
+          lastActiveEl = document.activeElement;
+          lightboxImg.src = src;
+          if (alt) lightboxImg.alt = alt;
+          lightboxImg.classList.remove('is-zoomed');
+          overlay.classList.add('is-open');
+          overlay.setAttribute('aria-hidden', 'false');
+          document.documentElement.style.overflow = 'hidden';
+          var closeBtn = overlay.querySelector('.case-study-lightbox-close');
+          if (closeBtn) closeBtn.focus();
+        }
+
+        function closeLightbox() {
+          overlay.classList.remove('is-open');
+          overlay.setAttribute('aria-hidden', 'true');
+          lightboxImg.classList.remove('is-zoomed');
+          lightboxImg.src = '';
+          document.documentElement.style.overflow = '';
+          if (lastActiveEl && lastActiveEl.focus) lastActiveEl.focus();
+        }
+
+        zoomButtons.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var src = btn.getAttribute('data-zoom-src');
+            var img = btn.querySelector('img');
+            openLightbox(src, img ? img.alt : '');
+          });
+        });
+
+        overlay.addEventListener('click', function (e) {
+          var t = e.target;
+          if (t && t.getAttribute && t.getAttribute('data-close') === 'true') closeLightbox();
+        });
+
+        lightboxImg.addEventListener('click', function () {
+          lightboxImg.classList.toggle('is-zoomed');
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeLightbox();
+        });
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      var prefersReduced =
+        window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) {
+        document.querySelectorAll('.reveal-hidden').forEach(function (el) {
+          el.classList.add('reveal-visible');
+        });
+        return;
+      }
+
+      var ioOpts = { threshold: 0.1 };
+
+      function revealAt(el, delayMs) {
+        setTimeout(function () {
+          if (el) el.classList.add('reveal-visible');
+        }, delayMs);
+      }
+
+      function observeOnce(target, onVisible) {
+        if (!target) return;
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            obs.unobserve(entry.target);
+            onVisible();
+          });
+        }, ioOpts);
+        obs.observe(target);
+      }
+
+      var introEls = [
+        document.querySelector('.case-study-back'),
+        document.querySelector('.case-study-hero-image'),
+        document.querySelector('.case-study-title'),
+        document.querySelector('.case-study-meta'),
+        document.querySelector('.case-study-lead'),
+        document.querySelector('.case-study-view-site')
+      ];
+      observeOnce(document.querySelector('.case-study-back'), function () {
+        introEls.forEach(function (el, i) {
+          revealAt(el, i * 120);
+        });
+      });
+
+      var overviewBanner = document.querySelector('.case-study-overview-banner');
+      observeOnce(overviewBanner, function () {
+        if (!overviewBanner) return;
+        var pill = overviewBanner.querySelector('.case-study-phase-label');
+        var cells = overviewBanner.querySelectorAll('.case-study-overview-cell');
+        var offset = 0;
+        if (pill) {
+          revealAt(pill, 0);
+          offset = 1;
+        }
+        Array.prototype.forEach.call(cells, function (cell, j) {
+          revealAt(cell, (offset + j) * 100);
+        });
+      });
+
+      var reqSection = document.querySelector('.case-study-section--requirements');
+      observeOnce(reqSection, function () {
+        if (!reqSection) return;
+        Array.prototype.forEach.call(reqSection.children, function (child, i) {
+          revealAt(child, i * 90);
+        });
+      });
+
+      var brainstorm = document.querySelector('.case-study-brainstorm-banner');
+      observeOnce(brainstorm, function () {
+        if (!brainstorm) return;
+        var seq = [];
+        var pill = brainstorm.querySelector('.case-study-phase-label');
+        var inner = brainstorm.querySelector('.case-study-brainstorm-inner');
+        if (pill) seq.push(pill);
+        if (inner) {
+          Array.prototype.forEach.call(inner.children, function (c) {
+            seq.push(c);
+          });
+        }
+        seq.forEach(function (el, i) {
+          revealAt(el, i * 120);
+        });
+      });
+
+      document.querySelectorAll('.case-study-idea-panel').forEach(function (panel) {
+        observeOnce(panel, function () {
+          var inner = panel.querySelector('.case-study-idea-panel-inner');
+          if (!inner) return;
+          var fig = inner.querySelector('.case-study-idea-panel-figure');
+          var copy = inner.querySelector('.case-study-idea-panel-copy');
+          var seq = [];
+          if (fig) seq.push(fig);
+          if (copy) {
+            Array.prototype.forEach.call(copy.children, function (c) {
+              seq.push(c);
+            });
+          }
+          seq.forEach(function (el, i) {
+            revealAt(el, i * 100);
+          });
+        });
+      });
+
+      var decisionBanner = document.querySelector('.case-study-decision-banner');
+      observeOnce(decisionBanner, function () {
+        var inner = decisionBanner ? decisionBanner.querySelector('.case-study-decision-inner') : null;
+        if (!inner) return;
+        Array.prototype.forEach.call(inner.children, function (child, i) {
+          revealAt(child, i * 120);
+        });
+      });
+
+      var heroAfterDefine = document.querySelector('.case-study-hero-image--after-define');
+      observeOnce(heroAfterDefine, function () {
+        revealAt(heroAfterDefine, 0);
+      });
+
+      document.querySelectorAll('.case-study-section').forEach(function (section) {
+        if (section.classList.contains('case-study-section--requirements')) return;
+
+        var blocks = [];
+        Array.prototype.forEach.call(section.children, function (child) {
+          var tag = child.tagName;
+          if (
+            tag === 'H2' ||
+            tag === 'H3' ||
+            tag === 'P' ||
+            tag === 'UL' ||
+            tag === 'OL' ||
+            tag === 'FIGURE' ||
+            (tag === 'DIV' &&
+              child.classList &&
+              (child.classList.contains('case-study-define-persona-quote-block') ||
+                child.classList.contains('case-study-wireframe-carousel') ||
+                child.classList.contains('case-study-define-solution-band') ||
+                child.classList.contains('case-study-prototype-video')))
+          ) {
+            blocks.push(child);
+          }
+        });
+        if (!blocks.length) return;
+        observeOnce(section, function () {
+          blocks.forEach(function (el, i) {
+            revealAt(el, i * 100);
+          });
+        });
       });
     })();
   </script>

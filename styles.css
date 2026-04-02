@@ -511,6 +511,7 @@ a {
   overflow: hidden;
 }
 
+.project-card-1 .project-card-topbox--gg-thumb,
 .project-card-4 .project-card-topbox--gg-thumb {
   position: relative;
   display: flex;
@@ -523,6 +524,7 @@ a {
   background: #fff;
 }
 
+.project-card-1 .project-card-gg-hero-img,
 .project-card-4 .project-card-gg-hero-img {
   display: block;
   width: 100%;
@@ -538,11 +540,13 @@ a {
     padding: 1.35rem 1rem;
   }
 
+  .project-card-1 .project-card-topbox--gg-thumb,
   .project-card-4 .project-card-topbox--gg-thumb {
     min-height: clamp(15rem, 78vw, 24rem);
     padding: 0.65rem 0.75rem;
   }
 
+  .project-card-1 .project-card-gg-hero-img,
   .project-card-4 .project-card-gg-hero-img {
     max-height: min(22rem, 70vw);
   }
@@ -568,6 +572,8 @@ a {
   pointer-events: none;
 }
 
+.project-card-1 a:hover .project-card-thumb-overlay,
+.project-card-1 a:focus-visible .project-card-thumb-overlay,
 .project-card-4 a:hover .project-card-thumb-overlay,
 .project-card-4 a:focus-visible .project-card-thumb-overlay {
   opacity: 1;
@@ -750,6 +756,128 @@ a {
     bottom: 10%;
     opacity: 0.35;
   }
+}
+
+/* Contact page hero image */
+.contact-hero-image {
+  border-radius: 0.75rem;
+  margin: 0;
+}
+
+/* Contact hero: image left, sparkles + heading right */
+.contact-hero .hero-content {
+  max-width: min(72rem, 100%);
+  width: 100%;
+}
+
+.contact-hero-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2rem, 6vw, 4rem);
+  align-items: start;
+}
+
+@media (min-width: 48em) {
+  .contact-hero-layout {
+    grid-template-columns: minmax(18rem, 1fr) minmax(16rem, 1fr);
+  }
+}
+
+.contact-hero-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 12rem;
+}
+
+.contact-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.contact-hero-caption {
+  margin: 0.75rem 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-sparkle-frame {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(0.5rem, 2vw, 1rem) 0;
+}
+
+.contact-sparkle-frame h1 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  /* Keep text inside the “empty” middle between sparkles */
+  padding-inline: clamp(3.5rem, 8vw, 6.5rem);
+}
+
+.contact-social-links {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.1rem;
+}
+
+.contact-linkedin,
+.contact-email {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contact-linkedin svg,
+.contact-email svg {
+  width: 2.6rem;
+  height: 2.6rem;
+  fill: currentColor;
+}
+
+.contact-email svg {
+  transform: scale(1.42);
+  transform-origin: center;
+}
+
+.contact-linkedin:hover,
+.contact-linkedin:focus-visible,
+.contact-email:hover,
+.contact-email:focus-visible {
+  color: var(--accent);
+}
+
+/* Sparkles should sit behind the right-side heading (Contact only) */
+.contact-sparkle-frame .hero-sparkles {
+  top: -0.9rem;
+  transform: none;
+  z-index: 1;
+}
+
+.contact-sparkle-frame .hero-sparkles-left {
+  left: -10%;
+}
+
+.contact-sparkle-frame .hero-sparkles-right {
+  right: -10%;
 }
 
 /* --- About page hero (portrait + copy) --- */
@@ -1114,6 +1242,12 @@ a {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
+.case-study-phase-label--on-purple {
+  background: rgba(255, 255, 255, 0.55);
+  color: #111;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
 /* Align phase pills in content sections with full-width sections (Overview, Challenge, Empathize…) */
 .case-study-section {
   margin-bottom: 2.5rem;
@@ -1134,6 +1268,7 @@ a {
 /* Full-bleed bands: pills stay inside horizontal padding and wrap instead of overlapping copy */
 .case-study-overview-banner > .case-study-phase-label,
 .case-study-challenge-banner > .case-study-phase-label,
+.case-study-brainstorm-banner > .case-study-phase-label,
 #research.case-study-research-band > .case-study-phase-label {
   display: block;
   width: fit-content;
@@ -1219,6 +1354,35 @@ a {
   }
 }
 
+.case-study-hero-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.case-study-hero-image img {
+  display: block;
+  flex: 0 1 auto;
+  width: 100%;
+  max-width: 38rem;
+  height: auto;
+}
+
+.case-study-hero-image--after-define {
+  margin-top: -1.35rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Optical center: PNG reads heavy on the right: nudge left vs heading block above */
+.case-study-hero-image--after-define img {
+  transform: translateX(clamp(-1.1rem, -3.25vw, -2.65rem));
+}
+
 .case-study-header {
   margin-bottom: 2rem;
 }
@@ -1299,6 +1463,17 @@ a {
   outline-offset: 3px;
 }
 
+.case-study-view-site--prototype {
+  color: #1a1a1a;
+  background: #d1bbfd;
+}
+
+.case-study-view-site--prototype:hover,
+.case-study-view-site--prototype:focus-visible {
+  background: #b89ef0;
+  color: #111;
+}
+
 /* Guiding Guardians — overview banner (full-width green) */
 .case-study-overview-banner {
   width: 100vw;
@@ -1311,6 +1486,47 @@ a {
   background: #5cb85c;
   color: #fff;
   box-sizing: border-box;
+}
+
+/* Resonance — overview banner (lavender; dark text) */
+.case-study-overview-banner--resonance {
+  background: #d1bbfd;
+  color: #111;
+}
+
+.case-study-overview-banner--resonance .case-study-overview-cell .case-study-overview-title,
+.case-study-overview-banner--resonance .case-study-overview-subtitle {
+  color: #111;
+}
+
+.case-study-overview-banner--resonance .case-study-overview-cell p,
+.case-study-overview-banner--resonance .case-study-overview-cell .case-study-overview-list li {
+  color: #111;
+}
+
+.case-study-overview-banner--resonance .case-study-overview-cell strong {
+  color: #111;
+}
+
+/* Align overview pill + grid with case-study article column (same max-width as .case-study) */
+.case-study-overview-banner--resonance .case-study-overview-banner-content {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.case-study-overview-banner--resonance .case-study-overview-inner {
+  max-width: none;
+}
+
+.case-study-overview-banner--resonance .case-study-overview-banner-content > .case-study-phase-label {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 @media (max-width: 47.9375em) {
@@ -1569,6 +1785,317 @@ a {
   }
 }
 
+/* Resonance — Brainstorming band (lavender, black type) */
+.case-study-brainstorm-banner {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  background: #d1bbfd;
+  box-sizing: border-box;
+  padding: 3rem 1.5rem;
+}
+
+.case-study-brainstorm-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.case-study-brainstorm-title {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #111;
+  text-align: left;
+}
+
+.case-study-brainstorm-lead {
+  margin: 0 0 1.35rem;
+  font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: #111;
+  text-align: left;
+}
+
+.case-study-brainstorm-quote {
+  margin: 0;
+  font-size: clamp(1.65rem, 4vw, 2.35rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #111;
+  text-align: center;
+}
+
+@media (max-width: 47.9375em) {
+  .case-study-brainstorm-banner {
+    width: calc(100% + 2.5rem);
+    max-width: none;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    margin-top: 0;
+    padding: 3rem 1.25rem;
+  }
+}
+
+/* Resonance — decision banner (lavender; sequential ellipsis) */
+.case-study-decision-banner {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  padding: 3rem 1.5rem;
+  background: #d1bbfd;
+  box-sizing: border-box;
+}
+
+.case-study-decision-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Define pill: left-aligned with Overview / Requirements / Brainstorm pills (not centered with heading) */
+.case-study-decision-inner > .case-study-phase-label {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+.case-study-decision-title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.35rem, 3.2vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111;
+}
+
+.case-study-decision-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.35rem 0 1rem;
+  min-height: clamp(2.25rem, 6vw, 3.25rem);
+  font-size: clamp(2rem, 5.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1;
+  color: #111;
+  letter-spacing: 0.02em;
+}
+
+.case-study-decision-dot {
+  display: inline-block;
+}
+
+.case-study-decision-dot--1 {
+  animation: case-study-decision-dot-1 2.4s infinite;
+}
+
+.case-study-decision-dot--2 {
+  animation: case-study-decision-dot-2 2.4s infinite;
+}
+
+.case-study-decision-dot--3 {
+  animation: case-study-decision-dot-3 2.4s infinite;
+}
+
+@keyframes case-study-decision-dot-1 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes case-study-decision-dot-2 {
+  0%,
+  32% {
+    opacity: 0;
+  }
+
+  33%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes case-study-decision-dot-3 {
+  0%,
+  65% {
+    opacity: 0;
+  }
+
+  66%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study-decision-dot--1,
+  .case-study-decision-dot--2,
+  .case-study-decision-dot--3 {
+    animation: none;
+    opacity: 1;
+  }
+
+  .case-study-decision-subtitle-text {
+    animation: none;
+    text-shadow: none;
+    transform: none;
+  }
+}
+
+.case-study-decision-subtitle {
+  margin: 0;
+  font-size: clamp(1.25rem, 3.2vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.35;
+  color: #111;
+}
+
+.case-study-decision-subtitle-text {
+  display: inline-block;
+  animation: case-study-decision-subtitle-ripple 5.5s ease-in-out infinite;
+}
+
+@keyframes case-study-decision-subtitle-ripple {
+  0%,
+  100% {
+    text-shadow:
+      0 0 0 rgba(107, 63, 163, 0),
+      0 0 0 rgba(209, 187, 253, 0);
+    transform: translateZ(0) scale(1);
+  }
+
+  35% {
+    text-shadow:
+      0 0 2px rgba(107, 63, 163, 0.55),
+      0 0 24px rgba(209, 187, 253, 0.75),
+      0 0 48px rgba(107, 63, 163, 0.4),
+      0 0 72px rgba(209, 187, 253, 0.22);
+    transform: translateZ(0) scale(1.045);
+  }
+
+  55% {
+    text-shadow:
+      0 0 3px rgba(107, 63, 163, 0.65),
+      0 0 32px rgba(209, 187, 253, 0.85),
+      0 0 56px rgba(107, 63, 163, 0.45),
+      0 0 88px rgba(209, 187, 253, 0.35),
+      0 0 120px rgba(107, 63, 163, 0.2);
+    transform: translateZ(0) scale(1.08);
+  }
+
+  75% {
+    text-shadow:
+      0 0 2px rgba(107, 63, 163, 0.4),
+      0 0 18px rgba(209, 187, 253, 0.5),
+      0 0 40px rgba(107, 63, 163, 0.28);
+    transform: translateZ(0) scale(1.03);
+  }
+}
+
+@media (max-width: 47.9375em) {
+  .case-study-decision-banner {
+    width: calc(100% + 2.5rem);
+    max-width: none;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    padding: 3rem 1.25rem;
+  }
+}
+
+/* Resonance — Idea 1 panel (diagram + Pros / Cons) */
+.case-study-idea-panel {
+  margin: 0 0 2.5rem;
+  padding: clamp(1.5rem, 3.5vw, 2.5rem);
+  background: #f2f0f6;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+}
+
+.case-study-idea-panel-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  align-items: start;
+}
+
+@media (min-width: 56em) {
+  .case-study-idea-panel-inner {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    column-gap: clamp(1.5rem, 3vw, 2.5rem);
+  }
+}
+
+.case-study-idea-panel-figure {
+  margin: 0;
+}
+
+.case-study-idea-panel-figure .case-study-zoomable {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.case-study-idea-panel-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+.case-study-idea-panel-title {
+  margin: 0 0 1.15rem;
+  font-size: clamp(1.25rem, 2.8vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.case-study-idea-panel-title-accent {
+  color: #6b3fa3;
+}
+
+.case-study-idea-panel-title-text {
+  color: #111;
+}
+
+.case-study-idea-panel-subtitle {
+  margin: 1.35rem 0 0.5rem;
+  font-size: clamp(1.05rem, 2.1vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: #6b3fa3;
+}
+
+.case-study-idea-panel-copy .case-study-idea-panel-subtitle:first-of-type {
+  margin-top: 0;
+}
+
+.case-study-idea-panel-list {
+  margin: 0 0 0.25rem;
+  padding-left: 1.2rem;
+  color: #111;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.55;
+}
+
+.case-study-idea-panel-list li {
+  margin: 0 0 0.4rem;
+}
+
+.case-study-idea-panel-list li:last-child {
+  margin-bottom: 0;
+}
+
 .case-study-section h2 {
   margin: 0 0 0.75rem;
   font-size: 1.25rem;
@@ -1583,6 +2110,33 @@ a {
 
 .case-study-section p:last-child {
   margin-bottom: 0;
+}
+
+/* Resonance — Hackathon Requirements (phase pill + hierarchy) */
+.case-study-section--requirements > h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.5rem, 3.2vw, 1.9rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.case-study-section--requirements h3 {
+  margin: 1.35rem 0 0.5rem;
+  font-size: clamp(1.2rem, 2.55vw, 1.48rem);
+  font-weight: 700;
+  line-height: 1.3;
+  /* Lavender-violet (#d1bbfd family); ~6:1 on white — WCAG AA normal text (4.5:1) */
+  color: #6b3fa3;
+}
+
+.case-study-section--requirements h2 + h3 {
+  margin-top: 0.85rem;
+}
+
+.case-study-section--requirements > p {
+  font-size: clamp(1.05rem, 2.1vw, 1.2rem);
+  line-height: 1.6;
 }
 
 /* Test section — body copy matches Challenge / Research / User Journey / Define scale */
