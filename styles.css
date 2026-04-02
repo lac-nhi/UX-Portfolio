@@ -2156,9 +2156,9 @@ a {
   line-height: 1.6;
 }
 
-/* Resonance — intro: text wraps beside ring + phone (float right; mockup reference) */
+/* Resonance — intro: copy left, ring + phone right (grid; reliable vs float on live hosts) */
 .case-study-section--resonance-intro .case-study-resonance-intro-layout {
-  display: flow-root;
+  display: block;
 }
 
 .case-study-section--resonance-intro .case-study-resonance-intro-media,
@@ -2167,13 +2167,29 @@ a {
   background: transparent;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 768px) {
+  .case-study-section--resonance-intro .case-study-resonance-intro-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(12rem, min(46%, 28rem));
+    column-gap: clamp(1rem, 2.75vw, 2rem);
+    align-items: center;
+  }
+
+  .case-study-section--resonance-intro .case-study-resonance-intro-copy {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+  }
+
   .case-study-section--resonance-intro .case-study-resonance-intro-media {
-    float: right;
-    width: min(46%, 28rem);
-    max-width: 100%;
-    margin: 0 0 0.5rem clamp(1rem, 2.75vw, 2rem);
-    shape-outside: ellipse(88% 58% at 68% 48%);
+    grid-column: 2;
+    grid-row: 1;
+    float: none;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    justify-self: end;
+    shape-outside: none;
   }
 
   .case-study-section--resonance-intro .case-study-resonance-intro-media-inner {
@@ -2200,7 +2216,7 @@ a {
 
   .case-study-section--resonance-intro .case-study-resonance-intro-ring-img {
     position: absolute;
-    left: clamp(-2.35rem, -14%, -0.5rem);
+    left: clamp(-1.35rem, -8%, -0.25rem);
     top: 44%;
     transform: translateY(-50%);
     width: clamp(5.25rem, 44%, 9.75rem);
@@ -2208,13 +2224,13 @@ a {
     z-index: 2;
     pointer-events: none;
   }
-
-  .case-study-section--resonance-intro .case-study-resonance-intro-copy {
-    min-width: min(12rem, 100%);
-  }
 }
 
-@media (max-width: 47.9375em) {
+@media (max-width: 767.98px) {
+  .case-study-section--resonance-intro .case-study-resonance-intro-layout {
+    display: block;
+  }
+
   .case-study-section--resonance-intro .case-study-resonance-intro-media {
     float: none;
     width: 100%;
@@ -2228,7 +2244,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.12rem;
     min-height: 0;
   }
 
