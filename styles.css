@@ -2382,16 +2382,19 @@ a {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   margin-bottom: 2.5rem;
-  padding: clamp(1.35rem, 3.5vw, 2.25rem) clamp(1rem, 3vw, 1.5rem)
-    clamp(2rem, 6vw, 4rem);
+  padding: clamp(1.05rem, 2.75vw, 1.75rem) clamp(0.85rem, 2.5vw, 1.25rem)
+    clamp(1.5rem, 4.5vw, 3rem);
   box-sizing: border-box;
-  background: #d1bbfd;
+  background: #d8c6fc;
   color: var(--text);
 }
 
 .case-study-resonance-wireframes-inner {
   max-width: var(--container-max);
   margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
 }
 
 .case-study-section--resonance-wireframes h2 {
@@ -2413,16 +2416,45 @@ a {
   text-align: left;
 }
 
+.case-study-resonance-pair-mode-row-wrap {
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.case-study-resonance-pair-mode-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: clamp(0.35rem, 1.5vw, 0.85rem);
+  width: max-content;
+  max-width: none;
+}
+
+.case-study-resonance-pair-mode-row .case-study-resonance-wireframes-figure {
+  flex-shrink: 0;
+}
+
+.case-study-resonance-pair-mode-row .case-study-resonance-wireframes-figure img {
+  image-rendering: high-quality;
+}
+
 .case-study-resonance-wireframes-pair {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 0;
   column-gap: clamp(0.1rem, 0.9vw, 0.35rem);
-  row-gap: clamp(0.65rem, 2vw, 1rem);
-  width: 100%;
-  max-width: 100%;
+  width: max-content;
+  max-width: none;
+}
+
+.case-study-resonance-wireframes-pair > .case-study-resonance-wireframes-figure,
+.case-study-resonance-wireframes-pair > .case-study-resonance-wireframes-metrics-cluster {
+  flex-shrink: 0;
 }
 
 .case-study-resonance-wireframes-pair > .case-study-resonance-wireframes-connector {
@@ -2484,7 +2516,11 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-start;
-  gap: 0;
+  gap: clamp(0.1rem, 0.9vw, 0.35rem);
+  flex-shrink: 0;
+}
+
+.case-study-resonance-wireframes-metrics-cluster > .case-study-resonance-wireframes-figure {
   flex-shrink: 0;
 }
 
@@ -2493,9 +2529,9 @@ a {
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
   gap: clamp(0.35rem, 1vw, 0.55rem);
-  width: min(11.25rem, 100%);
-  max-width: min(11.25rem, 100%);
-  flex: 1 1 auto;
+  width: 11.25rem;
+  max-width: 11.25rem;
+  flex: 0 0 auto;
   padding: clamp(0.45rem, 1.2vw, 0.7rem);
   background: rgba(255, 255, 255, 0.35);
   border-radius: 0.65rem;
