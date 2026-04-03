@@ -2291,6 +2291,623 @@ a {
   color: var(--text);
 }
 
+/* Resonance — interpersonal interoception + science (two columns, lavender band) */
+.case-study-section--resonance-interception {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: 2.5rem;
+  padding: clamp(2rem, 5vw, 3.25rem) clamp(1.25rem, 4vw, 2rem);
+  box-sizing: border-box;
+  background: #d1bbfd;
+  color: var(--text);
+}
+
+.case-study-resonance-interception-grid {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  align-items: start;
+}
+
+@media (min-width: 48em) {
+  .case-study-resonance-interception-grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    column-gap: clamp(2rem, 5vw, 3.5rem);
+  }
+}
+
+.case-study-section--resonance-interception h2 {
+  margin: 0 0 clamp(1.1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.35rem, 2.85vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+.case-study-resonance-interception-term h3 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.05rem, 2.1vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111;
+}
+
+.case-study-resonance-interception-term p {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.case-study-resonance-interception-rule {
+  display: block;
+  width: 100%;
+  height: 0;
+  margin: clamp(1rem, 2.2vw, 1.35rem) 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid rgba(17, 17, 17, 0.22);
+}
+
+.case-study-resonance-interception-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.case-study-resonance-interception-list li {
+  margin-bottom: 0.65rem;
+}
+
+.case-study-resonance-interception-list li:last-child {
+  margin-bottom: 0;
+}
+
+.case-study-resonance-interception-list strong {
+  color: #111;
+  font-weight: 700;
+}
+
+/* Resonance — app wireframes (lavender band; heading placeholder) */
+.case-study-section--resonance-wireframes {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: 2.5rem;
+  padding: clamp(1.35rem, 3.5vw, 2.25rem) clamp(1rem, 3vw, 1.5rem)
+    clamp(2rem, 6vw, 4rem);
+  box-sizing: border-box;
+  background: #d1bbfd;
+  color: var(--text);
+}
+
+.case-study-resonance-wireframes-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.case-study-section--resonance-wireframes h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.85vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.case-study-resonance-wireframes-subtitle {
+  margin: clamp(0.5rem, 1.4vw, 0.75rem) 0 clamp(0.65rem, 1.6vw, 0.95rem);
+  font-size: clamp(1.05rem, 2.1vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111;
+  text-align: left;
+}
+
+.case-study-resonance-wireframes-pair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0;
+  column-gap: clamp(0.1rem, 0.9vw, 0.35rem);
+  row-gap: clamp(1rem, 3vw, 1.75rem);
+}
+
+.case-study-resonance-wireframes-figure {
+  margin: 0;
+  max-width: min(100%, 14rem);
+}
+
+.case-study-resonance-wireframes-pair > .case-study-resonance-wireframes-figure:first-child img {
+  image-rendering: high-quality;
+}
+
+.case-study-resonance-wireframes-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.65rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.case-study-resonance-wireframes-figure--detail {
+  max-width: min(100%, clamp(15rem, 40vw, 22rem));
+  align-self: center;
+  background: #000;
+  padding: clamp(0.55rem, 1.25vw, 0.9rem);
+  border-radius: 0.65rem;
+  box-sizing: border-box;
+}
+
+.case-study-resonance-wireframes-figure--detail img {
+  border-radius: 0.45rem;
+  box-shadow: none;
+  image-rendering: high-quality;
+}
+
+.case-study-resonance-wireframes-connector {
+  flex: 0 0 clamp(1.75rem, 3.8vw, 2.85rem);
+  width: clamp(1.75rem, 3.8vw, 2.85rem);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+  padding: 0;
+}
+
+.case-study-resonance-wireframes-connector-svg {
+  width: 100%;
+  height: min(52%, 20rem);
+  min-height: 10rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 48rem) {
+  .case-study-resonance-wireframes-pair {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .case-study-resonance-wireframes-connector {
+    display: none;
+  }
+}
+
+/* Resonance — ring prototype embed (light band; matches case-study type) */
+.case-study-section--ring-prototype {
+  margin-bottom: 2.5rem;
+}
+
+.case-study-section--ring-prototype > h2 {
+  margin: 0 0 clamp(1.1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.35rem, 2.85vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+.case-study-section--ring-prototype .case-study-ring-prototype {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  box-sizing: border-box;
+}
+
+.case-study-section--ring-prototype .case-study-ring-prototype p {
+  margin: 0;
+  color: inherit;
+}
+
+.case-study-ring-prototype {
+  background: #fff;
+  color: var(--text);
+  font-family: var(--font-sans);
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(2rem, 5vw, 3.25rem) clamp(1.25rem, 4vw, 2rem);
+}
+
+.case-study-ring-prototype .hero-label {
+  font-size: clamp(0.625rem, 2.8vw, 0.6875rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+
+.case-study-ring-prototype h1 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: clamp(1.35rem, 2.85vw, 1.85rem);
+  letter-spacing: -0.02em;
+  color: #111;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+}
+
+.case-study-ring-prototype h1 em {
+  font-style: italic;
+  color: #6b3fa3;
+}
+
+.case-study-ring-prototype .subtitle {
+  font-weight: 400;
+  font-size: clamp(1.05rem, 2.1vw, 1.2rem);
+  color: var(--text);
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.55;
+}
+
+.case-study-ring-prototype .ring-stage {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.case-study-ring-prototype .ring-glow {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(107, 63, 163, 0.12) 0%, transparent 68%);
+  animation: crp-gp 3.5s ease-in-out infinite;
+  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes crp-gp {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.12);
+    opacity: 1;
+  }
+}
+
+.case-study-ring-prototype .mode-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.case-study-ring-prototype .mode-btn {
+  padding: 9px 24px;
+  border-radius: 100px;
+  border: 1px solid rgba(45, 45, 45, 0.2);
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.case-study-ring-prototype .mode-btn:hover {
+  border-color: rgba(107, 63, 163, 0.45);
+  color: var(--text);
+}
+
+.case-study-ring-prototype .mode-btn.active {
+  background: rgba(184, 169, 201, 0.25);
+  border-color: rgba(107, 63, 163, 0.55);
+  color: #6b3fa3;
+}
+
+.case-study-ring-prototype .mode-desc {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  color: var(--text);
+  text-align: center;
+  max-width: 440px;
+  line-height: 1.55;
+  margin-bottom: 2rem;
+  min-height: 3rem;
+  transition: opacity 0.25s;
+}
+
+.case-study-ring-prototype .divider {
+  width: 100%;
+  max-width: 560px;
+  border: none;
+  border-top: 1px solid rgba(17, 17, 17, 0.22);
+  margin-bottom: 2rem;
+}
+
+.case-study-ring-prototype .sec-label {
+  font-weight: 600;
+  font-size: clamp(0.625rem, 2.8vw, 0.6875rem);
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 560px;
+}
+
+.case-study-ring-prototype .haptics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 560px;
+  margin-bottom: 2rem;
+}
+
+.case-study-ring-prototype .hcard {
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 14px;
+  padding: 18px 17px;
+  position: relative;
+  overflow: hidden;
+}
+
+.case-study-ring-prototype .hcard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--ac, #6b3fa3);
+  opacity: 0.55;
+}
+
+.case-study-ring-prototype .hcard.wide {
+  grid-column: 1 / -1;
+}
+
+.case-study-ring-prototype .hc-name {
+  font-size: 11px;
+  color: var(--ac, #6b3fa3);
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.case-study-ring-prototype .hc-desc {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 2vw, 1.05rem);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.case-study-ring-prototype .sensors {
+  width: 100%;
+  max-width: 560px;
+  margin-bottom: 2rem;
+}
+
+.case-study-ring-prototype .sensor-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+.case-study-ring-prototype .sensor-row:last-child {
+  border-bottom: none;
+}
+
+.case-study-ring-prototype .s-num {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-muted);
+  width: 26px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 2px;
+}
+
+.case-study-ring-prototype .s-label {
+  font-weight: 600;
+  font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+  color: #111;
+  width: 165px;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.case-study-ring-prototype .s-desc {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 2vw, 1.05rem);
+  font-style: normal;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.case-study-ring-prototype .mats {
+  width: 100%;
+  max-width: 560px;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.case-study-ring-prototype .mat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 18px;
+}
+
+.case-study-ring-prototype .m-label {
+  font-weight: 600;
+  font-size: clamp(0.625rem, 2.8vw, 0.6875rem);
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.case-study-ring-prototype .m-val {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 2vw, 1.05rem);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.case-study-ring-prototype .m-acc {
+  color: #6b3fa3;
+  font-weight: 600;
+}
+
+.case-study-ring-prototype-mats-lead {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  color: var(--text);
+  line-height: 1.55;
+  margin-bottom: 4px;
+}
+
+.case-study-ring-prototype svg text {
+  font-family: var(--font-sans), system-ui, sans-serif !important;
+}
+
+.case-study-ring-prototype svg text[font-size="12.5"] {
+  fill: #111 !important;
+  font-weight: 600 !important;
+}
+
+.case-study-ring-prototype svg text[font-size="11.5"] {
+  fill: var(--text-muted) !important;
+  font-weight: 400 !important;
+}
+
+.case-study-ring-prototype svg text[font-size="14"] {
+  fill: var(--text-muted) !important;
+  font-weight: 500 !important;
+}
+
+.case-study-ring-prototype svg text[font-size="8"] {
+  fill: var(--text-muted) !important;
+  font-weight: 500 !important;
+}
+
+.case-study-ring-prototype svg .crp-svg-footnote {
+  fill: var(--text-muted) !important;
+  font-family: var(--font-sans), system-ui, sans-serif !important;
+}
+
+.case-study-ring-prototype .ring-spin {
+  animation: crp-rspin 16s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes crp-rspin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.case-study-ring-prototype .inner-breathe {
+  animation: crp-ibreathe 3.2s ease-in-out infinite;
+}
+
+@keyframes crp-ibreathe {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.case-study-ring-prototype .warm-arc {
+  animation: crp-warc 2.8s ease-in-out infinite;
+}
+
+@keyframes crp-warc {
+  0%,
+  100% {
+    opacity: 0.18;
+    stroke-width: 3;
+  }
+  50% {
+    opacity: 0.7;
+    stroke-width: 5;
+  }
+}
+
+.case-study-ring-prototype .sdot {
+  animation: crp-sdot 2.5s ease-in-out infinite;
+}
+
+.case-study-ring-prototype .sdot:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.case-study-ring-prototype .sdot:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes crp-sdot {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-study-ring-prototype .haptics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-ring-prototype .mat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-ring-prototype .s-label {
+    width: 110px;
+  }
+}
 /* Test section — body copy matches Challenge / Research / User Journey / Define scale */
 #test.case-study-section > p:not(.case-study-ideate-eyebrow) {
   font-size: clamp(1.05rem, 2.6vw, 1.25rem);

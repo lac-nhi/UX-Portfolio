@@ -251,19 +251,316 @@
         </div>
       </section>
 
-      <section class="case-study-section">
-        <h2 class="reveal-hidden">Problem & goals</h2>
-        <p class="reveal-hidden">Describe the problem space and what you set out to achieve.</p>
+      <section
+        class="case-study-section case-study-section--resonance-interception"
+        aria-labelledby="resonance-interception-heading"
+      >
+        <div class="case-study-resonance-interception-grid reveal-hidden">
+          <div class="case-study-resonance-interception-col case-study-resonance-interception-col--terms">
+            <h2 id="resonance-interception-heading">Interpersonal Interoception</h2>
+            <div class="case-study-resonance-interception-term">
+              <h3>Interoception</h3>
+              <p>Feeling your own body — now extended to the person next to you</p>
+            </div>
+            <hr class="case-study-resonance-interception-rule" aria-hidden="true" />
+            <div class="case-study-resonance-interception-term">
+              <h3>Thermoception</h3>
+              <p>Temperature as a closeness signal (wild, but it works)</p>
+            </div>
+            <hr class="case-study-resonance-interception-rule" aria-hidden="true" />
+            <div class="case-study-resonance-interception-term">
+              <h3>Social presence</h3>
+              <p>That felt sense of another person being really there — turned up</p>
+            </div>
+            <hr class="case-study-resonance-interception-rule" aria-hidden="true" />
+            <div class="case-study-resonance-interception-term">
+              <h3>Chronoception</h3>
+              <p>Two people falling into the same rhythm without trying</p>
+            </div>
+          </div>
+          <div class="case-study-resonance-interception-col case-study-resonance-interception-col--science">
+            <h2 id="resonance-interception-science-heading">The Science</h2>
+            <ul class="case-study-resonance-interception-list">
+              <li><strong>Heart rate variability</strong> actually mirrors between people who connect.</li>
+              <li><strong>Breathing syncs up</strong>, even when you’re not trying.</li>
+              <li><strong>Skin conductance</strong> spikes happen together, not just solo.</li>
+              <li>Documented in <strong>couples, close friendships, and great teams.</strong></li>
+              <li>The <strong>biology is real.</strong> It just never had an interface before.</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section class="case-study-section">
-        <h2 class="reveal-hidden">Process</h2>
-        <p class="reveal-hidden">Walk through your research, ideation, and design process.</p>
+      <section class="case-study-section case-study-section--ring-prototype" aria-labelledby="ring-prototype-heading">
+        <span class="case-study-phase-label case-study-phase-label--on-purple reveal-hidden" aria-hidden="true">Ideate</span>
+        <h2 id="ring-prototype-heading" class="reveal-hidden">The Ring Prototype</h2>
+        <div class="case-study-ring-prototype reveal-hidden">
+<div class="hero-label">Speculative wearable · 2026</div>
+<h1>The Resonance <em>Ring</em></h1>
+<p class="subtitle">A sense you've always had. Now legible.</p>
+
+<div class="ring-stage">
+  <div class="ring-glow"></div>
+
+  <svg viewBox="0 0 700 390" style="width:100%;max-width:700px;display:block;overflow:visible;">
+    <defs>
+      <radialGradient id="rg" cx="36%" cy="26%" r="64%">
+        <stop offset="0%"   stop-color="#5C5448"/>
+        <stop offset="28%"  stop-color="#3C3830"/>
+        <stop offset="65%"  stop-color="#242220"/>
+        <stop offset="100%" stop-color="#181614"/>
+      </radialGradient>
+      <radialGradient id="hl" cx="36%" cy="26%" r="44%">
+        <stop offset="0%"   stop-color="#8A8070" stop-opacity="0.42"/>
+        <stop offset="100%" stop-color="#2A2820" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="ig" cx="50%" cy="50%" r="50%">
+        <stop offset="0%"   stop-color="#E8A87C" stop-opacity="0.55"/>
+        <stop offset="55%"  stop-color="#E8A87C" stop-opacity="0.10"/>
+        <stop offset="100%" stop-color="#E8A87C" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="gf" x="-80%" y="-80%" width="260%" height="260%">
+        <feGaussianBlur stdDeviation="2.5" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="ds" x="-15%" y="-15%" width="130%" height="140%">
+        <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#000" flood-opacity="0.55"/>
+      </filter>
+    </defs>
+
+    <circle cx="350" cy="195" r="158" fill="none" stroke="#E8A87C" stroke-width="0.4" opacity="0.05"/>
+    <circle cx="350" cy="195" r="146" fill="none" stroke="#E8A87C" stroke-width="0.3" opacity="0.04"/>
+
+    <g style="transform-origin:350px 195px" class="ring-spin">
+      <circle cx="350" cy="195" r="133"
+        fill="none" stroke="#E8A87C" stroke-width="0.8"
+        stroke-dasharray="13 98" stroke-linecap="round" opacity="0.15"/>
+    </g>
+
+    <circle class="warm-arc" cx="350" cy="195" r="124"
+      fill="none" stroke="#E8A87C" stroke-linecap="round"
+      stroke-dasharray="120 659" stroke-dashoffset="0"
+      transform="rotate(-65 350 195)" filter="url(#gf)"/>
+
+    <circle cx="350" cy="195" r="118" fill="url(#rg)" filter="url(#ds)"/>
+    <circle cx="350" cy="195" r="118" fill="url(#hl)"/>
+    <circle cx="350" cy="195" r="118" fill="none" stroke="#6A6050" stroke-width="0.7" opacity="0.38"/>
+
+    <circle cx="350" cy="195" r="74" fill="#ffffff"/>
+    <circle class="inner-breathe" cx="350" cy="195" r="76" fill="url(#ig)"/>
+    <circle cx="350" cy="195" r="74" fill="none" stroke="#2A2820" stroke-width="1" opacity="0.6"/>
+
+    <path d="M 308 229 A 50 50 0 0 1 392 229"
+      fill="none" stroke="#181420" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+
+    <g filter="url(#gf)">
+      <circle class="sdot" cx="327" cy="234" r="3.2" fill="#4ADE80"/>
+      <circle class="sdot" cx="350" cy="238" r="3.2" fill="#4ADE80"/>
+      <circle class="sdot" cx="373" cy="234" r="3.2" fill="#4ADE80"/>
+    </g>
+
+    <rect x="315" y="224" width="70" height="2.5" rx="1.25" fill="#E8A87C" opacity="0.28"/>
+
+    <text x="350" y="185" text-anchor="middle"
+      font-family="DM Sans,sans-serif" font-size="14" fill="#8A8070" opacity="0.72">resonance</text>
+    <text x="350" y="204" text-anchor="middle"
+      font-family="DM Sans,sans-serif" font-weight="200"
+      font-size="8" letter-spacing="0.22em" fill="#3A3828" opacity="0.75">SENSING RING</text>
+
+    <polyline points="462,148 510,115 580,115" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <text x="584" y="112" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="start">8mm width</text>
+    <text x="584" y="128" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="start">slim enough to read as jewellery</text>
+
+    <polyline points="468,195 580,195" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <circle cx="468" cy="195" r="2.5" fill="#E8A87C" opacity="0.55"/>
+    <text x="584" y="192" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="start">Grade 5 titanium</text>
+    <text x="584" y="208" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="start">matte outer shell · skin-safe</text>
+
+    <polyline points="454,248 510,278 580,278" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <text x="584" y="275" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="start">Peltier element</text>
+    <text x="584" y="291" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="start">delivers warmth + cool to skin</text>
+
+    <polyline points="238,148 190,115 120,115" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <text x="116" y="112" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="end">BLE mesh radio</text>
+    <text x="116" y="128" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="end">direct ring-to-ring · no phone relay</text>
+
+    <polyline points="232,195 120,195" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <circle cx="232" cy="195" r="2.5" fill="#E8A87C" opacity="0.55"/>
+    <text x="116" y="192" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="end">Bioresin inner band</text>
+    <text x="116" y="208" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="end">skin-warm · hypoallergenic</text>
+
+    <polyline points="324,236 280,278 120,278" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <text x="116" y="275" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="end">PPG sensors · EDA strip</text>
+    <text x="116" y="291" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="end">HRV + skin conductance on inner band</text>
+
+    <text class="crp-svg-footnote" x="350" y="360"
+      text-anchor="middle"
+      font-family="DM Sans,sans-serif" font-weight="500"
+      font-size="9.5" letter-spacing="0.18em"
+      fill="#5a5a5a">RAW BIOMETRICS PROCESSED ON-DEVICE — NEVER TRANSMITTED</text>
+  </svg>
+</div>
+
+<div class="mode-row">
+  <button type="button" class="mode-btn active" data-ring-mode="solo">Solo</button>
+  <button type="button" class="mode-btn" data-ring-mode="paired">Paired</button>
+  <button type="button" class="mode-btn" data-ring-mode="group">Group</button>
+</div>
+
+<p class="mode-desc" id="ring-prototype-mode-desc">
+  The band senses your nervous system's social responses throughout the day — no paired device needed. Your personal frequency map builds over time.
+</p>
+
+<hr class="divider">
+
+<div class="sec-label">Haptic vocabulary — what the ring speaks to your skin</div>
+
+<div class="haptics-grid">
+  <div class="hcard" style="--ac:#E8A87C;">
+    <div class="hc-name">◉  Slow spreading warmth</div>
+    <p class="hc-desc">Resonance is building. Your nervous system is at ease in this presence — the ring confirms what your body already knows.</p>
+  </div>
+  <div class="hcard" style="--ac:#E8A87C;">
+    <div class="hc-name">◈  Rhythmic dual pulse</div>
+    <p class="hc-desc">Both rings beat in unison. You and your paired person are genuinely in phase — not just in the same room.</p>
+  </div>
+  <div class="hcard" style="--ac:#6B8FA8;">
+    <div class="hc-name" style="color:#6B8FA8;">∿  Cool irregular drift</div>
+    <p class="hc-desc">Subtle cooling and arrhythmic tap. Same space — different physiological fields. Information, not verdict.</p>
+  </div>
+  <div class="hcard" style="--ac:#9A8BA8;">
+    <div class="hc-name" style="color:#9A8BA8;">○  Voluntary reach</div>
+    <p class="hc-desc">One tap sends warmth to their ring. A non-verbal signal that crosses any room: <em>"I'm here with you."</em></p>
+  </div>
+  <div class="hcard wide" style="--ac:#C46A3A;">
+    <div class="hc-name" style="color:#C46A3A;">◎  Grounding press — slow inward pressure</div>
+    <p class="hc-desc">You've been physiologically dysregulated for a while. Not an alarm — an invitation to notice. A breath taken on your behalf before your mind has had time to form a story about why.</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="sec-label">Sensor array — inner band surface</div>
+<div class="sensors">
+  <div class="sensor-row">
+    <div class="s-num">01</div>
+    <div class="s-label">PPG sensor</div>
+    <div class="s-desc">Heart rate variability and pulse waveform — reads the capillary bed at the finger, where nerve density across the body is highest</div>
+  </div>
+  <div class="sensor-row">
+    <div class="s-num">02</div>
+    <div class="s-label">Galvanic skin response</div>
+    <div class="s-desc">Electrodermal activity tracking microsweating that reflects sympathetic nervous system arousal before conscious awareness registers it</div>
+  </div>
+  <div class="sensor-row">
+    <div class="s-num">03</div>
+    <div class="s-label">Skin temperature</div>
+    <div class="s-desc">Peripheral thermoception — emotional and physiological state modulates distal skin temperature measurably, even in subtle states</div>
+  </div>
+  <div class="sensor-row">
+    <div class="s-num">04</div>
+    <div class="s-label">Peltier element</div>
+    <div class="s-desc">Delivers warmth and cool as haptic outputs — recruits the body's own thermoception as an incoming communication channel</div>
+  </div>
+  <div class="sensor-row">
+    <div class="s-num">05</div>
+    <div class="s-label">Piezo vibration motor</div>
+    <div class="s-desc">Sub-threshold rhythmic pulses timed to mirror or diverge from the detected physiological rhythm of the paired wearer</div>
+  </div>
+  <div class="sensor-row">
+    <div class="s-num">06</div>
+    <div class="s-label">BLE mesh radio</div>
+    <div class="s-desc">Direct ring-to-ring pairing — no phone relay required in the moment. Range approx. 10 metres, continuous low-energy</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="mats">
+  <div class="sec-label" style="text-align:left;margin-bottom:4px;">Physical — materials and form</div>
+  <p class="case-study-ring-prototype-mats-lead">
+    Designed to read as jewellery. Worn where bonds are already symbolised.
+  </p>
+  <div class="mat-grid">
+    <div>
+      <div class="m-label">Outer shell</div>
+      <div class="m-val">Matte titanium<br><span class="m-acc">grade 5 · skin-safe</span></div>
+    </div>
+    <div>
+      <div class="m-label">Inner band</div>
+      <div class="m-val">Bioresin composite<br><span class="m-acc">skin-warm · hypoallergenic</span></div>
+    </div>
+    <div>
+      <div class="m-label">Width</div>
+      <div class="m-val">8mm flat profile<br><span class="m-acc">wider than standard to hold sensor surface</span></div>
+    </div>
+    <div>
+      <div class="m-label">Battery</div>
+      <div class="m-val">72 hr continuous<br><span class="m-acc">wireless charge cradle</span></div>
+    </div>
+    <div>
+      <div class="m-label">Data processing</div>
+      <div class="m-val">Entirely on-device<br><span class="m-acc">raw biometrics never leave the ring</span></div>
+    </div>
+    <div>
+      <div class="m-label">Visual language</div>
+      <div class="m-val">No screen. No light.<br><span class="m-acc">invisible technology</span></div>
+    </div>
+  </div>
+</div>
+        </div>
       </section>
 
-      <section class="case-study-section">
-        <h2 class="reveal-hidden">Outcomes</h2>
-        <p class="reveal-hidden">Share results, learnings, and impact.</p>
+      <section
+        class="case-study-section case-study-section--resonance-wireframes"
+        aria-labelledby="resonance-wireframes-heading"
+      >
+        <div class="case-study-resonance-wireframes-inner reveal-hidden">
+          <h2 id="resonance-wireframes-heading">Resonance App Wireframes</h2>
+          <h3 id="resonance-wireframes-home-heading" class="case-study-resonance-wireframes-subtitle">
+            Resonance App Home Screen • Solo Mode
+          </h3>
+          <div class="case-study-resonance-wireframes-pair">
+            <figure class="case-study-resonance-wireframes-figure">
+              <img
+                src="../assets/resonance-home-solo-wireframe.png"
+              alt="Resonance app home screen in Solo mode: header, self-alignment ring, summary tab, synchrony chart, and bottom navigation"
+              width="422"
+              height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <div class="case-study-resonance-wireframes-connector" aria-hidden="true">
+              <svg
+                class="case-study-resonance-wireframes-connector-svg"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M 0 78 L 44 78 L 44 30 L 100 30"
+                  fill="none"
+                  stroke="#0a0a0a"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="miter"
+                  vector-effect="non-scaling-stroke"
+                />
+              </svg>
+            </div>
+            <figure class="case-study-resonance-wireframes-figure case-study-resonance-wireframes-figure--detail">
+              <img
+                src="../assets/resonance-home-solo-graph-detail.png"
+                alt="Synchrony chart with time axis and HRV insight about recovery after the 11am meeting"
+                width="494"
+                height="573"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
       </section>
 
     </article>
@@ -369,7 +666,7 @@
         return;
       }
 
-      var ioOpts = { threshold: 0.1 };
+      var ioOpts = { threshold: 0, rootMargin: '0px 0px 40px 0px' };
 
       function revealAt(el, delayMs) {
         setTimeout(function () {
@@ -463,13 +760,16 @@
       });
 
       var decisionBanner = document.querySelector('.case-study-decision-banner');
-      observeOnce(decisionBanner, function () {
-        var inner = decisionBanner ? decisionBanner.querySelector('.case-study-decision-inner') : null;
-        if (!inner) return;
-        Array.prototype.forEach.call(inner.children, function (child, i) {
-          revealAt(child, i * 120);
+      if (decisionBanner) {
+        observeOnce(decisionBanner, function () {
+          if (!decisionBanner) return;
+          var inner = decisionBanner.querySelector('.case-study-decision-inner');
+          if (!inner) return;
+          Array.prototype.forEach.call(inner.children, function (child, i) {
+            revealAt(child, i * 120);
+          });
         });
-      });
+      }
 
       document.querySelectorAll('.case-study-section').forEach(function (section) {
         if (section.classList.contains('case-study-section--requirements')) return;
@@ -484,13 +784,19 @@
             tag === 'UL' ||
             tag === 'OL' ||
             tag === 'FIGURE' ||
+            (tag === 'SPAN' &&
+              child.classList &&
+              child.classList.contains('case-study-phase-label')) ||
             (tag === 'DIV' &&
               child.classList &&
               (child.classList.contains('case-study-define-persona-quote-block') ||
                 child.classList.contains('case-study-wireframe-carousel') ||
                 child.classList.contains('case-study-define-solution-band') ||
                 child.classList.contains('case-study-prototype-video') ||
-                child.classList.contains('case-study-resonance-intro-layout')))
+                child.classList.contains('case-study-resonance-intro-layout') ||
+                child.classList.contains('case-study-resonance-interception-grid') ||
+                child.classList.contains('case-study-resonance-wireframes-inner') ||
+                child.classList.contains('case-study-ring-prototype')))
           ) {
             blocks.push(child);
           }
@@ -500,6 +806,36 @@
           blocks.forEach(function (el, i) {
             revealAt(el, i * 100);
           });
+        });
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      var root = document.querySelector('.case-study-ring-prototype');
+      if (!root) return;
+      var desc = document.getElementById('ring-prototype-mode-desc');
+      var modes = {
+        solo:
+          "The band senses your nervous system's social responses throughout the day — no paired device needed. Your personal frequency map builds over time.",
+        paired:
+          'Two rings connect directly to each other over BLE mesh — sharing only the mutual resonance score. Neither person can access the other\'s individual biometric data.',
+        group:
+          'Up to 12 rings form a mesh. Every wearer feels the collective field. A private ambient display is available to the group facilitator only — invisible to others.'
+      };
+      root.querySelectorAll('[data-ring-mode]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var key = btn.getAttribute('data-ring-mode');
+          if (!key || !modes[key] || !desc) return;
+          root.querySelectorAll('.mode-btn').forEach(function (b) {
+            b.classList.remove('active');
+          });
+          btn.classList.add('active');
+          desc.style.opacity = '0';
+          setTimeout(function () {
+            desc.textContent = modes[key];
+            desc.style.opacity = '1';
+          }, 180);
         });
       });
     })();
