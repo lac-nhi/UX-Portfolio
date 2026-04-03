@@ -2420,7 +2420,13 @@ a {
   justify-content: flex-start;
   gap: 0;
   column-gap: clamp(0.1rem, 0.9vw, 0.35rem);
-  row-gap: clamp(1rem, 3vw, 1.75rem);
+  row-gap: clamp(0.65rem, 2vw, 1rem);
+  width: 100%;
+  max-width: 100%;
+}
+
+.case-study-resonance-wireframes-pair > .case-study-resonance-wireframes-connector {
+  flex-shrink: 0;
 }
 
 .case-study-resonance-wireframes-figure {
@@ -2442,7 +2448,7 @@ a {
 
 .case-study-resonance-wireframes-figure--detail {
   max-width: min(100%, clamp(15rem, 40vw, 22rem));
-  align-self: center;
+  align-self: flex-start;
   background: #000;
   padding: clamp(0.55rem, 1.25vw, 0.9rem);
   border-radius: 0.65rem;
@@ -2473,16 +2479,43 @@ a {
   flex-shrink: 0;
 }
 
-@media (max-width: 48rem) {
-  .case-study-resonance-wireframes-pair {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .case-study-resonance-wireframes-connector {
-    display: none;
-  }
+.case-study-resonance-wireframes-metrics-cluster {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 0;
+  flex-shrink: 0;
 }
+
+.case-study-resonance-wireframes-metric-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: clamp(0.35rem, 1vw, 0.55rem);
+  width: min(11.25rem, 100%);
+  max-width: min(11.25rem, 100%);
+  flex: 1 1 auto;
+  padding: clamp(0.45rem, 1.2vw, 0.7rem);
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 0.65rem;
+  box-sizing: border-box;
+}
+
+.case-study-resonance-wireframes-metric-cell {
+  margin: 0;
+  min-width: 0;
+}
+
+.case-study-resonance-wireframes-metric-cell .case-study-zoomable img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+  image-rendering: high-quality;
+}
+
 
 /* Resonance — ring prototype embed (light band; matches case-study type) */
 .case-study-section--ring-prototype {
