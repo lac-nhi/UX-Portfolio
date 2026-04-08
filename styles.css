@@ -2389,6 +2389,11 @@ a {
   color: var(--text);
 }
 
+.case-study-section--resonance-wireframes:has(#resonance-patterns-settings-heading) {
+  padding-top: clamp(0.85rem, 2.2vw, 1.45rem);
+  padding-bottom: clamp(1.15rem, 3.6vw, 2.4rem);
+}
+
 .case-study-resonance-wireframes-inner {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -2405,6 +2410,10 @@ a {
   color: #111;
   letter-spacing: -0.02em;
   text-align: left;
+}
+
+#resonance-patterns-settings-heading {
+  margin-bottom: clamp(1.15rem, 3.2vw, 2rem);
 }
 
 .case-study-resonance-wireframes-subtitle {
@@ -2431,6 +2440,13 @@ a {
   gap: clamp(0.35rem, 1.5vw, 0.85rem);
   width: max-content;
   max-width: none;
+}
+
+/* Romantic / Friendship horizontal rows: tighter gutters */
+.case-study-resonance-pair-mode-row--romantic,
+.case-study-resonance-pair-mode-row--friendship,
+.case-study-resonance-pair-mode-row--patterns-settings {
+  gap: clamp(0.12rem, 0.45vw, 0.38rem);
 }
 
 .case-study-resonance-pair-mode-row .case-study-resonance-wireframes-figure {
