@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resonance — Lac Nhi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <a href="../index.html" class="logo" aria-label="Lac Nhi home">
+      <img src="../assets/ln-logo.png" alt="LN logo" class="brand-logo">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="../index.html#projects">Work</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../assets/LN-UX-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="../contact/">Contact</a></li>
+      </ul>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="case-study-main">
+    <article class="case-study">
+      <a href="../index.html#projects" class="case-study-back reveal-hidden">← Back to projects</a>
+
+      <div class="case-study-hero-image reveal-hidden">
+        <img
+          src="../assets/resonance-thumb-hero.png"
+          alt="Resonance — smart ring and mobile app showing the wellness dashboard"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+
+      <header class="case-study-header">
+        <h1 class="case-study-title reveal-hidden">Resonance</h1>
+        <p class="case-study-meta reveal-hidden">FigBuild 2026 Hackathon · UX Designer · Speculative & Wearable Design</p>
+        <p class="case-study-lead reveal-hidden">Designed a speculative wearable and companion app in a 4-day hackathon that visualizes physiological synchrony to support self-awareness and relational wellness. Executed concept definition, UX design, and prototyping in Figma to translate complex biometric data into intuitive, user-facing insights.</p>
+        <a href="https://www.figma.com/make/uVVJIm6yGTXZQ0XbyZnZfX/figbuild-2026-MAKE?t=7Oox0k0wHKL21jT5-1" class="case-study-view-site case-study-view-site--prototype reveal-hidden" target="_blank" rel="noopener noreferrer">View Prototype</a>
+      </header>
+
+      <section class="case-study-overview-banner case-study-overview-banner--resonance" aria-labelledby="overview-banner-heading">
+        <div class="case-study-overview-banner-content">
+          <span class="case-study-phase-label case-study-phase-label--on-purple reveal-hidden" aria-hidden="true">Overview</span>
+          <div class="case-study-overview-inner">
+          <div class="case-study-overview-cell case-study-overview-cell--overview reveal-hidden">
+            <h2 id="overview-banner-heading" class="case-study-overview-title">Overview</h2>
+            <p>FigBuild 2026 challenged teams to design a tool that tracks, measures, visualizes or quantifies an aspect of human sensory experience.</p>
+            <p>We focused on <strong>physiological synchrony</strong>: how signals from the body could be made legible in a companion experience, without reducing people to raw metrics.</p>
+          </div>
+          <div class="case-study-overview-cell case-study-overview-cell--role reveal-hidden">
+            <h2 class="case-study-overview-title">Role</h2>
+            <ul class="case-study-overview-list">
+              <li>UI/UX Design</li>
+              <li>Speculative Research</li>
+              <li>Prototyping</li>
+            </ul>
+          </div>
+          <div class="case-study-overview-cell case-study-overview-cell--team reveal-hidden">
+            <h2 class="case-study-overview-title">Team</h2>
+            <ul class="case-study-overview-list">
+              <li>Lac Nhi Nguyen</li>
+              <li>Emma Breck</li>
+              <li>Tarun Suresh</li>
+            </ul>
+          </div>
+          <div class="case-study-overview-cell case-study-overview-cell--solution reveal-hidden">
+            <h3 class="case-study-overview-title">Solution</h3>
+            <p><strong>Resonance</strong> pairs a speculative wearable with a companion app that visualizes synchrony and rhythm—supporting self-awareness and relational wellness through calm, human-centered data storytelling.</p>
+          </div>
+          <div class="case-study-overview-cell case-study-overview-cell--duration reveal-hidden">
+            <h3 class="case-study-overview-title">Duration</h3>
+            <p>March 2026 (4 day sprint)</p>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-section case-study-section--requirements" id="requirements" aria-labelledby="requirements-heading">
+        <span class="case-study-phase-label reveal-hidden" aria-hidden="true">Requirements</span>
+        <h2 id="requirements-heading" class="reveal-hidden">Hackathon Requirements</h2>
+        <h3 class="reveal-hidden">The Challenge</h3>
+        <p class="reveal-hidden">Design a tool that <strong>tracks, measures, visualizes</strong> or <strong>quantifies</strong> an aspect of human sensory experience. Within the tool, provide the ability to detect, enhance, or manipulate those same sensory inputs.</p>
+        <h3 class="reveal-hidden">Context</h3>
+        <p class="reveal-hidden">The <strong>“quantified self” movement</strong> has reshaped how we understand our <strong>bodies and behaviors</strong>, but current tools only begin to capture this potential. Early designers of <strong>fitness trackers</strong> had to imagine <strong>capabilities</strong>—like <strong>continuous sensing</strong> and <strong>embedded technology</strong>—long before they were technically possible. Following that same spirit of <strong>speculation</strong>, this challenge asks us to envision the <strong>next frontier of self-knowledge</strong> by designing for <strong>sensory capabilities that do not yet exist.</strong></p>
+        <h3 class="reveal-hidden">Our Mission</h3>
+        <p class="reveal-hidden">Identify something <strong>intangible, invisible, or previously unmeasurable</strong> about the <strong>human sensory experience</strong> and design a <strong>speculative tool to track and influence it.</strong> This tool should be designed to support a <strong>wellness goal</strong> or <strong>behavioral change</strong> for an <strong>individual or a group.</strong></p>
+        <h3 class="reveal-hidden">Design Requirements</h3>
+        <p class="reveal-hidden">Your solution should feel <strong>novel</strong> and <strong>future forward</strong>, not a remix of an existing app and not something you generate on the first go. This is a <strong>speculative design challenge rooted in human need.</strong></p>
+      </section>
+
+      <section class="case-study-brainstorm-banner" aria-labelledby="brainstorm-heading">
+        <div class="case-study-brainstorm-content">
+          <span class="case-study-phase-label case-study-phase-label--on-purple reveal-hidden" aria-hidden="true">Brainstorming</span>
+          <div class="case-study-brainstorm-inner">
+            <h2 id="brainstorm-heading" class="case-study-brainstorm-title reveal-hidden">Brainstorming</h2>
+            <p class="case-study-brainstorm-lead reveal-hidden">Answering the big question:</p>
+            <img
+              class="case-study-brainstorm-mark reveal-hidden"
+              src="../assets/resonance-brainstorm-question-marks.png"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+            />
+            <p class="case-study-brainstorm-quote reveal-hidden">“What should we build?”</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-idea-panel" aria-labelledby="idea1-heading">
+        <div class="case-study-idea-panel-inner">
+          <figure class="case-study-idea-panel-figure reveal-hidden">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-social-battery-brainstorm.png"
+              aria-label="Enlarge Social Battery Monitor brainstorm diagram"
+            >
+              <img
+                src="../assets/resonance-social-battery-brainstorm.png"
+                alt="Brainstorm board: Social Battery Monitor at the center with sticky notes for Manipulation, Wellness Goal, Idea, What it measures, and Visualization."
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <div class="case-study-idea-panel-copy">
+            <h2 id="idea1-heading" class="case-study-idea-panel-title reveal-hidden">
+              <span class="case-study-idea-panel-title-accent">Idea 1:</span><span class="case-study-idea-panel-title-text"> Social Battery Monitor</span>
+            </h2>
+            <h3 class="case-study-idea-panel-subtitle reveal-hidden">Pros</h3>
+            <ul class="case-study-idea-panel-list reveal-hidden">
+              <li>Helps prevent social burnout</li>
+              <li>Feasible implementation</li>
+              <li>Addresses a real, relatable problem</li>
+              <li>Makes the intangible visible</li>
+              <li>Strong visualization concept</li>
+            </ul>
+            <h3 class="case-study-idea-panel-subtitle reveal-hidden">Cons</h3>
+            <ul class="case-study-idea-panel-list reveal-hidden">
+              <li>There’s existing similar products, might be a “remix”</li>
+              <li>Oversimplifying relationships</li>
+              <li>Needs a stronger “future forward” concept</li>
+              <li>Overlap with current existing wellness tools</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-idea-panel" aria-labelledby="idea2-heading">
+        <div class="case-study-idea-panel-inner">
+          <figure class="case-study-idea-panel-figure reveal-hidden">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-sensory-overload-brainstorm.png"
+              aria-label="Enlarge Sensory Overload Wear brainstorm diagram"
+            >
+              <img
+                src="../assets/resonance-sensory-overload-brainstorm.png"
+                alt="Brainstorm board: Sensory Overload Wear at the center with sticky notes for Visualization, What it measures, Wellness Goal, and Idea."
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <div class="case-study-idea-panel-copy">
+            <h2 id="idea2-heading" class="case-study-idea-panel-title reveal-hidden">
+              <span class="case-study-idea-panel-title-accent">Idea 2:</span><span class="case-study-idea-panel-title-text"> Sensory Overload Wear</span>
+            </h2>
+            <h3 class="case-study-idea-panel-subtitle reveal-hidden">Pros</h3>
+            <ul class="case-study-idea-panel-list reveal-hidden">
+              <li>Multi-sensory approach</li>
+              <li>Immediate, actionable intervention</li>
+              <li>Clear and meaningful use case</li>
+              <li>Future-forward idea if combined into one product.</li>
+            </ul>
+            <h3 class="case-study-idea-panel-subtitle reveal-hidden">Cons</h3>
+            <ul class="case-study-idea-panel-list reveal-hidden">
+              <li>Overlap with existing products (e.g. noise cancelling headphones) might be a “remix”</li>
+              <li>Lacks deeper “invisible sensing”</li>
+              <li>Familiar interaction model</li>
+              <li>Limited speculative leap</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-decision-banner" aria-labelledby="decision-heading">
+        <div class="case-study-decision-inner">
+          <span class="case-study-phase-label case-study-phase-label--on-purple reveal-hidden" aria-hidden="true">Define</span>
+          <h2 id="decision-heading" class="case-study-decision-title reveal-hidden">What we decided to design</h2>
+          <p class="case-study-decision-dots reveal-hidden" aria-hidden="true">
+            <span class="case-study-decision-dot case-study-decision-dot--1">.</span><span class="case-study-decision-dot case-study-decision-dot--2">.</span><span class="case-study-decision-dot case-study-decision-dot--3">.</span>
+          </p>
+          <p class="case-study-decision-subtitle reveal-hidden">
+            <span class="case-study-decision-subtitle-text">Resonance— A Wearable Ring &amp; Companion App</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="case-study-section case-study-section--resonance-intro" aria-labelledby="resonance-intro-what-heading">
+        <div class="case-study-resonance-intro-layout reveal-hidden">
+          <div class="case-study-resonance-intro-media">
+            <div class="case-study-resonance-intro-media-inner">
+              <img
+                class="case-study-resonance-intro-ring-img"
+                src="../assets/resonance-intro-ring.png?v=5"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="case-study-resonance-intro-app-img"
+                src="../assets/resonance-intro-app.png?v=5"
+                alt="Resonance companion app — dashboard with sync ring and Synchrony graph"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+          <div class="case-study-resonance-intro-copy">
+            <div class="case-study-resonance-intro-block">
+              <h3 id="resonance-intro-what-heading">What is Resonance?</h3>
+              <p>Resonance is a smart ring and companion app that makes <strong>physiological synchrony legible</strong> — for the first time.</p>
+            </div>
+            <div class="case-study-resonance-intro-block">
+              <h3>The Problem</h3>
+              <p>We spend much of our lives trying to understand <strong>how we feel</strong>—but many of those feelings are <strong>hard to read or explain.</strong></p>
+            </div>
+            <div class="case-study-resonance-intro-block">
+              <h3>The Shift</h3>
+              <p><strong>Disconnection</strong> doesn’t happen all at once; it appears as a <strong>subtle drift</strong> in our relationships, energy, and well-being through signals <strong>we sense but can’t interpret.</strong></p>
+            </div>
+            <div class="case-study-resonance-intro-block">
+              <h3>The Solution</h3>
+              <p><strong>Resonance</strong> makes these <strong>invisible signals visible</strong>, helping people understand and act on their <strong>emotions, relationships, and energy.</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="case-study-section case-study-section--resonance-interception"
+        aria-labelledby="resonance-interception-heading"
+      >
+        <div class="case-study-resonance-interception-grid reveal-hidden">
+          <div class="case-study-resonance-interception-col case-study-resonance-interception-col--terms">
+            <h2 id="resonance-interception-heading">Interpersonal Interoception</h2>
+            <div class="case-study-resonance-interception-term">
+              <h3>Interoception</h3>
+              <p>Feeling your own body — now extended to the person next to you</p>
+            </div>
+            <hr class="case-study-resonance-interception-rule" aria-hidden="true" />
+            <div class="case-study-resonance-interception-term">
+              <h3>Thermoception</h3>
+              <p>Temperature as a closeness signal (wild, but it works)</p>
+            </div>
+            <hr class="case-study-resonance-interception-rule" aria-hidden="true" />
+            <div class="case-study-resonance-interception-term">
+              <h3>Social presence</h3>
+              <p>That felt sense of another person being really there — turned up</p>
+            </div>
+            <hr class="case-study-resonance-interception-rule" aria-hidden="true" />
+            <div class="case-study-resonance-interception-term">
+              <h3>Chronoception</h3>
+              <p>Two people falling into the same rhythm without trying</p>
+            </div>
+          </div>
+          <div class="case-study-resonance-interception-col case-study-resonance-interception-col--science">
+            <h2 id="resonance-interception-science-heading">The Science</h2>
+            <ul class="case-study-resonance-interception-list">
+              <li><strong>Heart rate variability</strong> actually mirrors between people who connect.</li>
+              <li><strong>Breathing syncs up</strong>, even when you’re not trying.</li>
+              <li><strong>Skin conductance</strong> spikes happen together, not just solo.</li>
+              <li>Documented in <strong>couples, close friendships, and great teams.</strong></li>
+              <li>The <strong>biology is real.</strong> It just never had an interface before.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-section case-study-section--ring-prototype" aria-labelledby="ring-prototype-heading">
+        <span class="case-study-phase-label case-study-phase-label--on-purple reveal-hidden" aria-hidden="true">Ideate</span>
+        <h2 id="ring-prototype-heading" class="reveal-hidden">The Ring Prototype</h2>
+        <div class="case-study-ring-prototype reveal-hidden">
+<div class="hero-label">Speculative wearable · 2026</div>
+<h1>The Resonance <em>Ring</em></h1>
+<p class="subtitle">A sense you've always had. Now legible.</p>
+
+<div class="ring-stage">
+  <div class="ring-glow"></div>
+
+  <svg viewBox="0 0 700 390" style="width:100%;max-width:700px;display:block;overflow:visible;">
+    <defs>
+      <radialGradient id="rg" cx="36%" cy="26%" r="64%">
+        <stop offset="0%"   stop-color="#5C5448"/>
+        <stop offset="28%"  stop-color="#3C3830"/>
+        <stop offset="65%"  stop-color="#242220"/>
+        <stop offset="100%" stop-color="#181614"/>
+      </radialGradient>
+      <radialGradient id="hl" cx="36%" cy="26%" r="44%">
+        <stop offset="0%"   stop-color="#8A8070" stop-opacity="0.42"/>
+        <stop offset="100%" stop-color="#2A2820" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="ig" cx="50%" cy="50%" r="50%">
+        <stop offset="0%"   stop-color="#E8A87C" stop-opacity="0.55"/>
+        <stop offset="55%"  stop-color="#E8A87C" stop-opacity="0.10"/>
+        <stop offset="100%" stop-color="#E8A87C" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="gf" x="-80%" y="-80%" width="260%" height="260%">
+        <feGaussianBlur stdDeviation="2.5" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="ds" x="-15%" y="-15%" width="130%" height="140%">
+        <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#000" flood-opacity="0.55"/>
+      </filter>
+    </defs>
+
+    <circle cx="350" cy="195" r="158" fill="none" stroke="#E8A87C" stroke-width="0.4" opacity="0.05"/>
+    <circle cx="350" cy="195" r="146" fill="none" stroke="#E8A87C" stroke-width="0.3" opacity="0.04"/>
+
+    <g style="transform-origin:350px 195px" class="ring-spin">
+      <circle cx="350" cy="195" r="133"
+        fill="none" stroke="#E8A87C" stroke-width="0.8"
+        stroke-dasharray="13 98" stroke-linecap="round" opacity="0.15"/>
+    </g>
+
+    <circle class="warm-arc" cx="350" cy="195" r="124"
+      fill="none" stroke="#E8A87C" stroke-linecap="round"
+      stroke-dasharray="120 659" stroke-dashoffset="0"
+      transform="rotate(-65 350 195)" filter="url(#gf)"/>
+
+    <circle cx="350" cy="195" r="118" fill="url(#rg)" filter="url(#ds)"/>
+    <circle cx="350" cy="195" r="118" fill="url(#hl)"/>
+    <circle cx="350" cy="195" r="118" fill="none" stroke="#6A6050" stroke-width="0.7" opacity="0.38"/>
+
+    <circle cx="350" cy="195" r="74" fill="#ffffff"/>
+    <circle class="inner-breathe" cx="350" cy="195" r="76" fill="url(#ig)"/>
+    <circle cx="350" cy="195" r="74" fill="none" stroke="#2A2820" stroke-width="1" opacity="0.6"/>
+
+    <path d="M 308 229 A 50 50 0 0 1 392 229"
+      fill="none" stroke="#181420" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+
+    <g filter="url(#gf)">
+      <circle class="sdot" cx="327" cy="234" r="3.2" fill="#4ADE80"/>
+      <circle class="sdot" cx="350" cy="238" r="3.2" fill="#4ADE80"/>
+      <circle class="sdot" cx="373" cy="234" r="3.2" fill="#4ADE80"/>
+    </g>
+
+    <rect x="315" y="224" width="70" height="2.5" rx="1.25" fill="#E8A87C" opacity="0.28"/>
+
+    <text x="350" y="185" text-anchor="middle"
+      font-family="DM Sans,sans-serif" font-size="14" fill="#8A8070" opacity="0.72">resonance</text>
+    <text x="350" y="204" text-anchor="middle"
+      font-family="DM Sans,sans-serif" font-weight="200"
+      font-size="8" letter-spacing="0.22em" fill="#3A3828" opacity="0.75">SENSING RING</text>
+
+    <polyline points="462,148 510,115 580,115" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <text x="584" y="112" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="start">8mm width</text>
+    <text x="584" y="128" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="start">slim enough to read as jewellery</text>
+
+    <polyline points="468,195 580,195" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <circle cx="468" cy="195" r="2.5" fill="#E8A87C" opacity="0.55"/>
+    <text x="584" y="192" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="start">Grade 5 titanium</text>
+    <text x="584" y="208" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="start">matte outer shell · skin-safe</text>
+
+    <polyline points="454,248 510,278 580,278" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <text x="584" y="275" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="start">Peltier element</text>
+    <text x="584" y="291" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="start">delivers warmth + cool to skin</text>
+
+    <polyline points="238,148 190,115 120,115" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <text x="116" y="112" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="end">BLE mesh radio</text>
+    <text x="116" y="128" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="end">direct ring-to-ring · no phone relay</text>
+
+    <polyline points="232,195 120,195" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <circle cx="232" cy="195" r="2.5" fill="#E8A87C" opacity="0.55"/>
+    <text x="116" y="192" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="end">Bioresin inner band</text>
+    <text x="116" y="208" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="end">skin-warm · hypoallergenic</text>
+
+    <polyline points="324,236 280,278 120,278" fill="none" stroke="#1E2535" stroke-width="0.8"/>
+    <text x="116" y="275" font-family="DM Sans,sans-serif" font-weight="300" font-size="12.5" fill="#C8C4BC" text-anchor="end">PPG sensors · EDA strip</text>
+    <text x="116" y="291" font-family="DM Sans,sans-serif" font-size="11.5" fill="#3A4258" text-anchor="end">HRV + skin conductance on inner band</text>
+
+    <text class="crp-svg-footnote" x="350" y="360"
+      text-anchor="middle"
+      font-family="DM Sans,sans-serif" font-weight="500"
+      font-size="9.5" letter-spacing="0.18em"
+      fill="#5a5a5a">RAW BIOMETRICS PROCESSED ON-DEVICE — NEVER TRANSMITTED</text>
+  </svg>
+</div>
+
+<div class="mode-row">
+  <button type="button" class="mode-btn active" data-ring-mode="solo">Solo</button>
+  <button type="button" class="mode-btn" data-ring-mode="paired">Paired</button>
+  <button type="button" class="mode-btn" data-ring-mode="group">Group</button>
+</div>
+
+<p class="mode-desc" id="ring-prototype-mode-desc">
+  The band senses your nervous system's social responses throughout the day — no paired device needed. Your personal frequency map builds over time.
+</p>
+
+<hr class="divider">
+
+<div class="sec-label">Haptic vocabulary — what the ring speaks to your skin</div>
+
+<div class="haptics-grid">
+  <div class="hcard" style="--ac:#E8A87C;">
+    <div class="hc-name">◉  Slow spreading warmth</div>
+    <p class="hc-desc">Resonance is building. Your nervous system is at ease in this presence — the ring confirms what your body already knows.</p>
+  </div>
+  <div class="hcard" style="--ac:#E8A87C;">
+    <div class="hc-name">◈  Rhythmic dual pulse</div>
+    <p class="hc-desc">Both rings beat in unison. You and your paired person are genuinely in phase — not just in the same room.</p>
+  </div>
+  <div class="hcard" style="--ac:#6B8FA8;">
+    <div class="hc-name" style="color:#6B8FA8;">∿  Cool irregular drift</div>
+    <p class="hc-desc">Subtle cooling and arrhythmic tap. Same space — different physiological fields. Information, not verdict.</p>
+  </div>
+  <div class="hcard" style="--ac:#9A8BA8;">
+    <div class="hc-name" style="color:#9A8BA8;">○  Voluntary reach</div>
+    <p class="hc-desc">One tap sends warmth to their ring. A non-verbal signal that crosses any room: <em>"I'm here with you."</em></p>
+  </div>
+  <div class="hcard wide" style="--ac:#C46A3A;">
+    <div class="hc-name" style="color:#C46A3A;">◎  Grounding press — slow inward pressure</div>
+    <p class="hc-desc">You've been physiologically dysregulated for a while. Not an alarm — an invitation to notice. A breath taken on your behalf before your mind has had time to form a story about why.</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="sec-label">Sensor array — inner band surface</div>
+<div class="sensors">
+  <div class="sensor-row">
+    <div class="s-num">01</div>
+    <div class="s-label">PPG sensor</div>
+    <div class="s-desc">Heart rate variability and pulse waveform — reads the capillary bed at the finger, where nerve density across the body is highest</div>
+  </div>
+  <div class="sensor-row">
+    <div class="s-num">02</div>
+    <div class="s-label">Galvanic skin response</div>
+    <div class="s-desc">Electrodermal activity tracking microsweating that reflects sympathetic nervous system arousal before conscious awareness registers it</div>
+  </div>
+  <div class="sensor-row">
+    <div class="s-num">03</div>
+    <div class="s-label">Skin temperature</div>
+    <div class="s-desc">Peripheral thermoception — emotional and physiological state modulates distal skin temperature measurably, even in subtle states</div>
+  </div>
+  <div class="sensor-row">
+    <div class="s-num">04</div>
+    <div class="s-label">Peltier element</div>
+    <div class="s-desc">Delivers warmth and cool as haptic outputs — recruits the body's own thermoception as an incoming communication channel</div>
+  </div>
+  <div class="sensor-row">
+    <div class="s-num">05</div>
+    <div class="s-label">Piezo vibration motor</div>
+    <div class="s-desc">Sub-threshold rhythmic pulses timed to mirror or diverge from the detected physiological rhythm of the paired wearer</div>
+  </div>
+  <div class="sensor-row">
+    <div class="s-num">06</div>
+    <div class="s-label">BLE mesh radio</div>
+    <div class="s-desc">Direct ring-to-ring pairing — no phone relay required in the moment. Range approx. 10 metres, continuous low-energy</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="mats">
+  <div class="sec-label" style="text-align:left;margin-bottom:4px;">Physical — materials and form</div>
+  <p class="case-study-ring-prototype-mats-lead">
+    Designed to read as jewellery. Worn where bonds are already symbolised.
+  </p>
+  <div class="mat-grid">
+    <div>
+      <div class="m-label">Outer shell</div>
+      <div class="m-val">Matte titanium<br><span class="m-acc">grade 5 · skin-safe</span></div>
+    </div>
+    <div>
+      <div class="m-label">Inner band</div>
+      <div class="m-val">Bioresin composite<br><span class="m-acc">skin-warm · hypoallergenic</span></div>
+    </div>
+    <div>
+      <div class="m-label">Width</div>
+      <div class="m-val">8mm flat profile<br><span class="m-acc">wider than standard to hold sensor surface</span></div>
+    </div>
+    <div>
+      <div class="m-label">Battery</div>
+      <div class="m-val">72 hr continuous<br><span class="m-acc">wireless charge cradle</span></div>
+    </div>
+    <div>
+      <div class="m-label">Data processing</div>
+      <div class="m-val">Entirely on-device<br><span class="m-acc">raw biometrics never leave the ring</span></div>
+    </div>
+    <div>
+      <div class="m-label">Visual language</div>
+      <div class="m-val">No screen. No light.<br><span class="m-acc">invisible technology</span></div>
+    </div>
+  </div>
+</div>
+        </div>
+      </section>
+
+      <section
+        class="case-study-section case-study-section--resonance-wireframes"
+        aria-labelledby="resonance-wireframes-heading"
+      >
+        <div class="case-study-resonance-wireframes-inner reveal-hidden">
+          <h2 id="resonance-wireframes-heading">Resonance App Wireframes</h2>
+          <h3 id="resonance-wireframes-home-heading" class="case-study-resonance-wireframes-subtitle">
+            Resonance App Home Screen • Solo Mode
+          </h3>
+          <div class="case-study-resonance-wireframes-pair">
+            <figure class="case-study-resonance-wireframes-figure">
+              <button
+                type="button"
+                class="case-study-zoomable"
+                data-zoom-src="../assets/resonance-home-solo-wireframe.png"
+                aria-label="Enlarge Resonance home screen mockup"
+              >
+                <img
+                  src="../assets/resonance-home-solo-wireframe.png"
+                  alt="Resonance app home screen in Solo mode: header, self-alignment ring, summary tab, synchrony chart, and bottom navigation"
+                  width="422"
+                  height="1024"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+            </figure>
+            <div class="case-study-resonance-wireframes-connector" aria-hidden="true">
+              <svg
+                class="case-study-resonance-wireframes-connector-svg"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M 0 78 L 44 78 L 44 30 L 100 30"
+                  fill="none"
+                  stroke="#0a0a0a"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="miter"
+                  vector-effect="non-scaling-stroke"
+                />
+              </svg>
+            </div>
+            <figure class="case-study-resonance-wireframes-figure case-study-resonance-wireframes-figure--detail">
+              <button
+                type="button"
+                class="case-study-zoomable"
+                data-zoom-src="../assets/resonance-home-solo-graph-detail.png"
+                aria-label="Enlarge synchrony graph and insight detail"
+              >
+                <img
+                  src="../assets/resonance-home-solo-graph-detail.png"
+                  alt="Synchrony chart with time axis and HRV insight about recovery after the 11am meeting"
+                  width="494"
+                  height="573"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+            </figure>
+            <div class="case-study-resonance-wireframes-metrics-cluster">
+              <div
+                class="case-study-resonance-wireframes-metric-grid"
+                role="group"
+                aria-label="Expanded metric detail cards"
+              >
+                <figure class="case-study-resonance-wireframes-metric-cell">
+                  <button
+                    type="button"
+                    class="case-study-zoomable"
+                    data-zoom-src="../assets/resonance-metric-card-hrv.png"
+                    aria-label="Enlarge Heart Rate Variability metric card"
+                  >
+                    <img
+                      src="../assets/resonance-metric-card-hrv.png"
+                      alt="Heart Rate Variability expanded card with RMSSD and progress bar"
+                      width="345"
+                      height="226"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </button>
+                </figure>
+                <figure class="case-study-resonance-wireframes-metric-cell">
+                  <button
+                    type="button"
+                    class="case-study-zoomable"
+                    data-zoom-src="../assets/resonance-metric-card-electro.png"
+                    aria-label="Enlarge Electrodermal Activity metric card"
+                  >
+                    <img
+                      src="../assets/resonance-metric-card-electro.png"
+                      alt="Electrodermal Activity expanded card with drift and progress bar"
+                      width="345"
+                      height="247"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </button>
+                </figure>
+                <figure class="case-study-resonance-wireframes-metric-cell">
+                  <button
+                    type="button"
+                    class="case-study-zoomable"
+                    data-zoom-src="../assets/resonance-metric-card-peripheral.png"
+                    aria-label="Enlarge Peripheral Temperature metric card"
+                  >
+                    <img
+                      src="../assets/resonance-metric-card-peripheral.png"
+                      alt="Peripheral Temperature expanded card with Celsius reading and trend"
+                      width="345"
+                      height="247"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </button>
+                </figure>
+                <figure class="case-study-resonance-wireframes-metric-cell">
+                  <button
+                    type="button"
+                    class="case-study-zoomable"
+                    data-zoom-src="../assets/resonance-metric-card-post.png"
+                    aria-label="Enlarge Post interaction recovery metric card"
+                  >
+                    <img
+                      src="../assets/resonance-metric-card-post.png"
+                      alt="Post interaction recovery expanded card with time to baseline"
+                      width="345"
+                      height="268"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </button>
+                </figure>
+              </div>
+              <figure class="case-study-resonance-wireframes-figure">
+                <button
+                  type="button"
+                  class="case-study-zoomable"
+                  data-zoom-src="../assets/resonance-solo-interactions.png"
+                  aria-label="Enlarge Interactions tab with alignment diagram and interaction list"
+                >
+                  <img
+                    src="../assets/resonance-solo-interactions.png"
+                    alt="Resonance Solo Interactions tab: sync score, Summary and Interactions tabs, alignment circle with plus and minus markers, and recent interaction cards"
+                    width="393"
+                    height="746"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h3 id="resonance-pair-mode-heading" class="case-study-resonance-wireframes-subtitle">
+        Pair a new connection to discover - Pair Mode
+      </h3>
+      <div class="case-study-resonance-pair-mode-row-wrap">
+        <div class="case-study-resonance-pair-mode-row">
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-mode-new-connection.jpg"
+              aria-label="Enlarge Pair new connection screen"
+            >
+              <img
+                src="../assets/resonance-pair-mode-new-connection.jpg"
+                alt="Pair new connection: overlapping rings, Begin pairing button, and consent cards"
+                width="439"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-mode-confirmation.png"
+              aria-label="Enlarge Connection paired confirmation screen"
+            >
+              <img
+                src="../assets/resonance-pair-mode-confirmation.png"
+                alt="Connection paired confirmation with checkmark and success message"
+                width="393"
+                height="337"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-mode-describe.jpg"
+              aria-label="Enlarge Describe this connection screen"
+            >
+              <img
+                src="../assets/resonance-pair-mode-describe.jpg"
+                alt="Describe this connection: name field, connection type options, and Complete pairing button"
+                width="571"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+        </div>
+      </div>
+      <h3 id="resonance-pair-mode-romantic-heading" class="case-study-resonance-wireframes-subtitle">
+        Pair Mode - Romantic
+      </h3>
+      <div class="case-study-resonance-pair-mode-row-wrap">
+        <div
+          class="case-study-resonance-pair-mode-row case-study-resonance-pair-mode-row--romantic"
+        >
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-romantic-connections.jpg"
+              aria-label="Enlarge Connections list for Romantic tab"
+            >
+              <img
+                src="../assets/resonance-pair-romantic-connections.jpg"
+                alt="Connections: Romantic tab with average resonance Venn diagram and Atlas Moon card"
+                width="608"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-romantic-atlas-summary.jpg"
+              aria-label="Enlarge Atlas Moon romantic relationship summary"
+            >
+              <img
+                src="../assets/resonance-pair-romantic-atlas-summary.jpg"
+                alt="Atlas Moon romantic summary: synchrony chart, insight text, peak and lowest resonance cards"
+                width="487"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-romantic-metrics-hrv-thermal.jpg"
+              aria-label="Enlarge HRV Synchrony and Thermal Convergence metric cards"
+            >
+              <img
+                src="../assets/resonance-pair-romantic-metrics-hrv-thermal.jpg"
+                alt="HRV Synchrony and Thermal Convergence expanded metric cards"
+                width="634"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-romantic-metrics-arousal-repair.jpg"
+              aria-label="Enlarge Sympathetic Co-Arousal and Repair Arc metric cards"
+            >
+              <img
+                src="../assets/resonance-pair-romantic-metrics-arousal-repair.jpg"
+                alt="Sympathetic Co-Arousal and Repair Arc expanded metric cards"
+                width="634"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-romantic-atlas-interactions.png"
+              aria-label="Enlarge Atlas Moon Interactions tab with Venn diagram and timeline"
+            >
+              <img
+                src="../assets/resonance-pair-romantic-atlas-interactions.png"
+                alt="Atlas Moon Interactions tab: You and Atlas Venn diagram plus recent interaction moments"
+                width="479"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+        </div>
+      </div>
+      <h3 id="resonance-pair-mode-friendship-heading" class="case-study-resonance-wireframes-subtitle">
+        Pair Mode - Friendship
+      </h3>
+      <div class="case-study-resonance-pair-mode-row-wrap">
+        <div
+          class="case-study-resonance-pair-mode-row case-study-resonance-pair-mode-row--friendship"
+        >
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-friendship-maya-summary.png"
+              aria-label="Enlarge Maya Ngussi friendship summary with synchrony chart"
+            >
+              <img
+                src="../assets/resonance-pair-friendship-maya-summary.png"
+                alt="Maya Ngussi close friendship summary: sync score, Summary tab, multi-line chart and insight text"
+                width="533"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-friendship-metrics-1.png"
+              aria-label="Enlarge Engagement Synchrony and Stress Contagion Index metric cards"
+            >
+              <img
+                src="../assets/resonance-pair-friendship-metrics-1.png"
+                alt="Friendship metric cards: Engagement Synchrony and Stress Contagion Index"
+                width="562"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-friendship-metrics-2.png"
+              aria-label="Enlarge Reciprocity Score and Drift Velocity metric cards"
+            >
+              <img
+                src="../assets/resonance-pair-friendship-metrics-2.png"
+                alt="Friendship metric cards: Reciprocity Score and Drift Velocity"
+                width="562"
+                height="1024"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <figure class="case-study-resonance-wireframes-figure">
+            <button
+              type="button"
+              class="case-study-zoomable"
+              data-zoom-src="../assets/resonance-pair-friendship-maya-interactions.png"
+              aria-label="Enlarge Maya Ngussi Interactions tab with Venn diagram and timeline"
+            >
+              <img
+                src="../assets/resonance-pair-friendship-maya-interactions.png"
+                alt="Maya Ngussi Interactions tab: You and Maya Venn diagram and recent friendship moments"
+                width="393"
+                height="756"
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+        </div>
+      </div>
+
+      <section
+        class="case-study-section case-study-section--resonance-wireframes"
+        aria-labelledby="resonance-patterns-settings-heading"
+      >
+        <div class="case-study-resonance-wireframes-inner reveal-hidden">
+          <h2 id="resonance-patterns-settings-heading">Patterns &amp; Settings Pages</h2>
+          <div class="case-study-resonance-pair-mode-row-wrap">
+            <div
+              class="case-study-resonance-pair-mode-row case-study-resonance-pair-mode-row--patterns-settings"
+            >
+              <figure class="case-study-resonance-wireframes-figure">
+                <button
+                  type="button"
+                  class="case-study-zoomable"
+                  data-zoom-src="../assets/resonance-patterns-screen-1.png"
+                  aria-label="Enlarge Patterns screen: baseline and environments that nourish you"
+                >
+                  <img
+                    src="../assets/resonance-patterns-screen-1.png"
+                    alt="Patterns: social nervous system baseline and environments that nourish you"
+                    width="672"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+              </figure>
+              <figure class="case-study-resonance-wireframes-figure">
+                <button
+                  type="button"
+                  class="case-study-zoomable"
+                  data-zoom-src="../assets/resonance-patterns-screen-2.png"
+                  aria-label="Enlarge Patterns screen: environments that drain you and resonance by time of day"
+                >
+                  <img
+                    src="../assets/resonance-patterns-screen-2.png"
+                    alt="Patterns: environments that drain you and resonance by time of day"
+                    width="592"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+              </figure>
+              <figure class="case-study-resonance-wireframes-figure">
+                <button
+                  type="button"
+                  class="case-study-zoomable"
+                  data-zoom-src="../assets/resonance-settings-screen.png"
+                  aria-label="Enlarge Settings screen: ring, privacy, and active modes"
+                >
+                  <img
+                    src="../assets/resonance-settings-screen.png"
+                    alt="Settings: Resonance Ring status, privacy, and Solo Paired Collective modes"
+                    width="499"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study-section" aria-labelledby="resonance-app-prototype-heading">
+        <h2 id="resonance-app-prototype-heading">Resonance App Prototype</h2>
+        <p>Press play and click around!</p>
+        <iframe
+          style="display: block; width: min(100%, 38rem); height: min(96vh, 72rem); margin: 0 auto; border: 1px solid rgba(0, 0, 0, 0.1)"
+          src="https://embed.figma.com/proto/1XwWeEPVNioS6UHOwofI6w/Resonance-App-Prototype?node-id=29%3A4&amp;starting-point-node-id=29%3A4&amp;embed-host=share&amp;hotspot-hints=true"
+          allow="fullscreen"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="case-study-back-to-top-nav" aria-label="Back to top">
+      <a href="#top" class="case-study-back-to-top">Back to the Top <span class="case-study-back-to-top-arrow" aria-hidden="true">↑</span></a>
+    </nav>
+    <nav class="site-footer-nav" aria-label="Footer">
+      <ul class="site-footer-list">
+        <li><a href="../index.html#projects">Work</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../assets/LN-UX-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="../contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var navList = document.querySelector('.nav-list');
+      if (toggle && navList) {
+        toggle.addEventListener('click', function () {
+          var open = navList.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open);
+        });
+      }
+
+      var zoomButtons = document.querySelectorAll('.case-study-zoomable');
+      if (zoomButtons && zoomButtons.length) {
+        var overlay = document.createElement('div');
+        overlay.className = 'case-study-lightbox';
+        overlay.setAttribute('role', 'dialog');
+        overlay.setAttribute('aria-modal', 'true');
+        overlay.setAttribute('aria-hidden', 'true');
+
+        overlay.innerHTML =
+          '<div class="case-study-lightbox-backdrop" data-close="true"></div>' +
+          '<div class="case-study-lightbox-panel" role="document">' +
+            '<button type="button" class="case-study-lightbox-close" aria-label="Close image" data-close="true">×</button>' +
+            '<img class="case-study-lightbox-img" alt="Zoomed image" />' +
+          '</div>';
+
+        document.body.appendChild(overlay);
+
+        var lightboxImg = overlay.querySelector('.case-study-lightbox-img');
+        var lastActiveEl = null;
+
+        function openLightbox(src, alt) {
+          lastActiveEl = document.activeElement;
+          lightboxImg.src = src;
+          if (alt) lightboxImg.alt = alt;
+          lightboxImg.classList.remove('is-zoomed');
+          overlay.classList.add('is-open');
+          overlay.setAttribute('aria-hidden', 'false');
+          document.documentElement.style.overflow = 'hidden';
+          var closeBtn = overlay.querySelector('.case-study-lightbox-close');
+          if (closeBtn) closeBtn.focus();
+        }
+
+        function closeLightbox() {
+          overlay.classList.remove('is-open');
+          overlay.setAttribute('aria-hidden', 'true');
+          lightboxImg.classList.remove('is-zoomed');
+          lightboxImg.src = '';
+          document.documentElement.style.overflow = '';
+          if (lastActiveEl && lastActiveEl.focus) lastActiveEl.focus();
+        }
+
+        zoomButtons.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var src = btn.getAttribute('data-zoom-src');
+            var img = btn.querySelector('img');
+            openLightbox(src, img ? img.alt : '');
+          });
+        });
+
+        overlay.addEventListener('click', function (e) {
+          var t = e.target;
+          if (t && t.getAttribute && t.getAttribute('data-close') === 'true') closeLightbox();
+        });
+
+        lightboxImg.addEventListener('click', function () {
+          lightboxImg.classList.toggle('is-zoomed');
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeLightbox();
+        });
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      var prefersReduced =
+        window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) {
+        document.querySelectorAll('.reveal-hidden').forEach(function (el) {
+          el.classList.add('reveal-visible');
+        });
+        return;
+      }
+
+      var ioOpts = { threshold: 0, rootMargin: '0px 0px 40px 0px' };
+
+      function revealAt(el, delayMs) {
+        setTimeout(function () {
+          if (el) el.classList.add('reveal-visible');
+        }, delayMs);
+      }
+
+      function observeOnce(target, onVisible) {
+        if (!target) return;
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            obs.unobserve(entry.target);
+            onVisible();
+          });
+        }, ioOpts);
+        obs.observe(target);
+      }
+
+      var introEls = [
+        document.querySelector('.case-study-back'),
+        document.querySelector('.case-study-hero-image'),
+        document.querySelector('.case-study-title'),
+        document.querySelector('.case-study-meta'),
+        document.querySelector('.case-study-lead'),
+        document.querySelector('.case-study-view-site')
+      ];
+      observeOnce(document.querySelector('.case-study-back'), function () {
+        introEls.forEach(function (el, i) {
+          revealAt(el, i * 120);
+        });
+      });
+
+      var overviewBanner = document.querySelector('.case-study-overview-banner');
+      observeOnce(overviewBanner, function () {
+        if (!overviewBanner) return;
+        var pill = overviewBanner.querySelector('.case-study-phase-label');
+        var cells = overviewBanner.querySelectorAll('.case-study-overview-cell');
+        var offset = 0;
+        if (pill) {
+          revealAt(pill, 0);
+          offset = 1;
+        }
+        Array.prototype.forEach.call(cells, function (cell, j) {
+          revealAt(cell, (offset + j) * 100);
+        });
+      });
+
+      var reqSection = document.querySelector('.case-study-section--requirements');
+      observeOnce(reqSection, function () {
+        if (!reqSection) return;
+        Array.prototype.forEach.call(reqSection.children, function (child, i) {
+          revealAt(child, i * 90);
+        });
+      });
+
+      var brainstorm = document.querySelector('.case-study-brainstorm-banner');
+      observeOnce(brainstorm, function () {
+        if (!brainstorm) return;
+        var seq = [];
+        var pill = brainstorm.querySelector('.case-study-phase-label');
+        var inner = brainstorm.querySelector('.case-study-brainstorm-inner');
+        if (pill) seq.push(pill);
+        if (inner) {
+          Array.prototype.forEach.call(inner.children, function (c) {
+            seq.push(c);
+          });
+        }
+        seq.forEach(function (el, i) {
+          revealAt(el, i * 120);
+        });
+      });
+
+      document.querySelectorAll('.case-study-idea-panel').forEach(function (panel) {
+        observeOnce(panel, function () {
+          var inner = panel.querySelector('.case-study-idea-panel-inner');
+          if (!inner) return;
+          var fig = inner.querySelector('.case-study-idea-panel-figure');
+          var copy = inner.querySelector('.case-study-idea-panel-copy');
+          var seq = [];
+          if (fig) seq.push(fig);
+          if (copy) {
+            Array.prototype.forEach.call(copy.children, function (c) {
+              seq.push(c);
+            });
+          }
+          seq.forEach(function (el, i) {
+            revealAt(el, i * 100);
+          });
+        });
+      });
+
+      var decisionBanner = document.querySelector('.case-study-decision-banner');
+      if (decisionBanner) {
+        observeOnce(decisionBanner, function () {
+          if (!decisionBanner) return;
+          var inner = decisionBanner.querySelector('.case-study-decision-inner');
+          if (!inner) return;
+          Array.prototype.forEach.call(inner.children, function (child, i) {
+            revealAt(child, i * 120);
+          });
+        });
+      }
+
+      document.querySelectorAll('.case-study-section').forEach(function (section) {
+        if (section.classList.contains('case-study-section--requirements')) return;
+
+        var blocks = [];
+        Array.prototype.forEach.call(section.children, function (child) {
+          var tag = child.tagName;
+          if (
+            tag === 'H2' ||
+            tag === 'H3' ||
+            tag === 'P' ||
+            tag === 'UL' ||
+            tag === 'OL' ||
+            tag === 'FIGURE' ||
+            (tag === 'SPAN' &&
+              child.classList &&
+              child.classList.contains('case-study-phase-label')) ||
+            (tag === 'DIV' &&
+              child.classList &&
+              (child.classList.contains('case-study-define-persona-quote-block') ||
+                child.classList.contains('case-study-wireframe-carousel') ||
+                child.classList.contains('case-study-define-solution-band') ||
+                child.classList.contains('case-study-prototype-video') ||
+                child.classList.contains('case-study-resonance-intro-layout') ||
+                child.classList.contains('case-study-resonance-interception-grid') ||
+                child.classList.contains('case-study-resonance-wireframes-inner') ||
+                child.classList.contains('case-study-ring-prototype')))
+          ) {
+            blocks.push(child);
+          }
+        });
+        if (!blocks.length) return;
+        observeOnce(section, function () {
+          blocks.forEach(function (el, i) {
+            revealAt(el, i * 100);
+          });
+        });
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      var root = document.querySelector('.case-study-ring-prototype');
+      if (!root) return;
+      var desc = document.getElementById('ring-prototype-mode-desc');
+      var modes = {
+        solo:
+          "The band senses your nervous system's social responses throughout the day — no paired device needed. Your personal frequency map builds over time.",
+        paired:
+          'Two rings connect directly to each other over BLE mesh — sharing only the mutual resonance score. Neither person can access the other\'s individual biometric data.',
+        group:
+          'Up to 12 rings form a mesh. Every wearer feels the collective field. A private ambient display is available to the group facilitator only — invisible to others.'
+      };
+      root.querySelectorAll('[data-ring-mode]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var key = btn.getAttribute('data-ring-mode');
+          if (!key || !modes[key] || !desc) return;
+          root.querySelectorAll('.mode-btn').forEach(function (b) {
+            b.classList.remove('active');
+          });
+          btn.classList.add('active');
+          desc.style.opacity = '0';
+          setTimeout(function () {
+            desc.textContent = modes[key];
+            desc.style.opacity = '1';
+          }, 180);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lac Nhi — UX Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <a href="/" class="logo" aria-label="Lac Nhi home">
+      <img src="/assets/ln-logo.png" alt="LN logo" class="brand-logo">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="#projects">Work</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/assets/LN-UX-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-sparkles hero-sparkles-left" aria-hidden="true"></div>
+      <div class="hero-sparkles hero-sparkles-right" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <h1 id="hero-heading">Hi, I'm Lac Nhi <span class="hero-emoji" aria-hidden="true">👩🏻‍💻</span></h1>
+        <p class="hero-tagline">I create user-centered experiences grounded in research and rooted in empathy.</p>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span class="hero-scroll-label">
+          <span class="hero-scroll-letter" style="--i: 0">p</span><span class="hero-scroll-letter" style="--i: 1">r</span><span class="hero-scroll-letter" style="--i: 2">o</span><span class="hero-scroll-letter" style="--i: 3">j</span><span class="hero-scroll-letter" style="--i: 4">e</span><span class="hero-scroll-letter" style="--i: 5">c</span><span class="hero-scroll-letter" style="--i: 6">t</span><span class="hero-scroll-letter" style="--i: 7">s</span>
+        </span>
+        <a href="#projects" class="hero-scroll-caret" aria-label="Scroll to projects">
+          <svg class="hero-scroll-caret-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 10 L12 16 L18 10" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="projects" id="projects" aria-label="Projects">
+      <div class="projects-inner">
+        <div class="project-grid">
+          <article class="project-card project-card-1">
+            <a href="/resonance/">
+              <div class="project-card-topbox project-card-topbox--gg-thumb">
+                <img
+                  class="project-card-gg-hero-img"
+                  src="/assets/resonance-thumb-hero.png"
+                  alt="Resonance — smart ring and mobile app showing the wellness dashboard"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="project-card-thumb-overlay" aria-hidden="true">
+                  <span class="project-card-thumb-overlay-title">Resonance</span>
+                </div>
+              </div>
+              <div class="project-card-tags">
+                <span class="project-tag">UI/UX Design</span>
+                <span class="project-tag">Data Visualization</span>
+                <span class="project-tag">Speculative Design</span>
+                <span class="project-tag">FigBuild Hackathon</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card project-card-2 project-card--hidden" aria-hidden="true">
+            <a href="/dopamine/">
+              <div class="project-card-topbox" aria-hidden="true">
+                <div class="project-card-mockup">Preview / mockup</div>
+              </div>
+              <div class="project-card-tags">
+                <span class="project-tag">UX design</span>
+                <span class="project-tag">Prototyping</span>
+                <span class="project-tag">Interaction design</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card project-card-3 project-card--hidden" aria-hidden="true">
+            <a href="/project-3/">
+              <div class="project-card-topbox" aria-hidden="true">
+                <div class="project-card-mockup">Preview / mockup</div>
+              </div>
+              <div class="project-card-tags">
+                <span class="project-tag">Service design</span>
+                <span class="project-tag">Strategy</span>
+                <span class="project-tag">Research</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card project-card-4">
+            <a href="/guiding-guardians/">
+              <div class="project-card-topbox project-card-topbox--gg-thumb">
+                <img
+                  class="project-card-gg-hero-img"
+                  src="/assets/guiding-guardians-thumb-hero.png"
+                  alt="Guiding Guardians — laptop and mobile mockups"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="project-card-thumb-overlay" aria-hidden="true">
+                  <span class="project-card-thumb-overlay-title">Guiding Guardians</span>
+                </div>
+              </div>
+              <div class="project-card-tags">
+                <span class="project-tag">UI/UX Design</span>
+                <span class="project-tag">UX Research</span>
+                <span class="project-tag">AI Chatbot</span>
+                <span class="project-tag">Hackathon</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="case-study-back-to-top-nav" aria-label="Back to top">
+      <a href="#top" class="case-study-back-to-top">Back to the Top <span class="case-study-back-to-top-arrow" aria-hidden="true">↑</span></a>
+    </nav>
+    <nav class="site-footer-nav" aria-label="Footer">
+      <ul class="site-footer-list">
+        <li><a href="/#projects">Work</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/assets/LN-UX-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var navList = document.querySelector('.nav-list');
+      if (toggle && navList) {
+        toggle.addEventListener('click', function () {
+          var open = navList.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open);
+        });
+      }
+
+      if (window.lottie) {
+        var sparkleEls = document.querySelectorAll('.hero-sparkles');
+        sparkleEls.forEach(function (sparkles) {
+          var anim = lottie.loadAnimation({
+            container: sparkles,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'sparkle-animation.json',
+            rendererSettings: {
+              preserveAspectRatio: 'xMidYMid meet',
+              progressiveLoad: true,
+              hideOnTransparent: true,
+            },
+          });
+          if (anim && anim.setSpeed) {
+            anim.setSpeed(0.85);
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
