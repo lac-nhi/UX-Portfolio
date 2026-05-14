@@ -2426,10 +2426,27 @@ a {
   text-align: left;
 }
 
-/* Keep the Figma prototype above full-bleed wireframe bands so clicks reach the embed */
-.case-study-section:has(#resonance-app-prototype-heading) iframe {
+/* Figma prototype: narrow tall iframe so default scale-down fills width (larger phone); minimal embed URL keeps prototype interactive */
+.case-study-section--resonance-proto-embed {
+  position: relative;
+  z-index: 5;
+}
+
+.case-study-section--resonance-proto-embed .case-study-figma-embed {
+  width: min(100%, 420px);
+  margin: 0 auto;
+}
+
+.case-study-section--resonance-proto-embed .case-study-figma-embed-frame {
   position: relative;
   z-index: 1;
+  display: block;
+  width: 100%;
+  height: min(88dvh, 52rem);
+  min-height: 28rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  pointer-events: auto;
 }
 
 .case-study-resonance-wireframes-subtitle {
