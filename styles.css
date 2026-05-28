@@ -1529,6 +1529,12 @@ a {
   margin-right: auto;
 }
 
+/* Dopamine — overview banner variant (light blue) */
+.case-study-overview-banner--dopamine {
+  background: #c6e8ff;
+  color: #111;
+}
+
 @media (max-width: 47.9375em) {
   .case-study-overview-banner {
     width: calc(100% + 2.5rem);
@@ -1622,6 +1628,43 @@ a {
     grid-row: 2;
     margin-left: clamp(3rem, 6vw, 5rem);
     align-self: start;
+  }
+}
+
+@media (min-width: 56em) {
+  .case-study-overview-banner--dopamine .case-study-overview-inner {
+    grid-template-columns: minmax(0, 1.85fr) max-content max-content max-content;
+    grid-template-rows: auto;
+    column-gap: clamp(2.5rem, 4vw, 3.5rem);
+    row-gap: 0;
+    align-items: start;
+  }
+
+  .case-study-overview-banner--dopamine .case-study-overview-cell--role {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 0;
+  }
+
+  .case-study-overview-banner--dopamine .case-study-overview-cell--team {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 0;
+  }
+
+  .case-study-overview-banner--dopamine .case-study-overview-cell--duration {
+    grid-column: 4;
+    grid-row: 1;
+    margin-left: 0;
+    align-self: start;
+  }
+
+  .case-study-overview-banner--dopamine .case-study-overview-cell--duration p {
+    margin-top: 0;
+  }
+
+  .case-study-overview-banner--dopamine .case-study-overview-cell--duration .case-study-overview-title {
+    margin-bottom: 1rem;
   }
 }
 
