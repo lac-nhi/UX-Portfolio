@@ -2216,6 +2216,16 @@ a {
   line-height: 1.6;
 }
 
+/* Dopamine requirements: same layout as requirements section, blue accent headings */
+.case-study-section--dopamine-requirements h3 {
+  color: #2f74c0;
+}
+
+.case-study-section--dopamine-requirements li {
+  font-size: clamp(1.05rem, 2.1vw, 1.2rem);
+  line-height: 1.6;
+}
+
 /* Resonance — intro: copy left, ring + phone right (grid; reliable vs float on live hosts) */
 .case-study-section--resonance-intro .case-study-resonance-intro-layout {
   display: block;
