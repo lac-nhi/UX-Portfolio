@@ -512,6 +512,7 @@ a {
 }
 
 .project-card-1 .project-card-topbox--gg-thumb,
+.project-card-2 .project-card-topbox--gg-thumb,
 .project-card-4 .project-card-topbox--gg-thumb {
   position: relative;
   display: flex;
@@ -525,6 +526,7 @@ a {
 }
 
 .project-card-1 .project-card-gg-hero-img,
+.project-card-2 .project-card-gg-hero-img,
 .project-card-4 .project-card-gg-hero-img {
   display: block;
   width: 100%;
@@ -541,12 +543,14 @@ a {
   }
 
   .project-card-1 .project-card-topbox--gg-thumb,
+  .project-card-2 .project-card-topbox--gg-thumb,
   .project-card-4 .project-card-topbox--gg-thumb {
     min-height: clamp(15rem, 78vw, 24rem);
     padding: 0.65rem 0.75rem;
   }
 
   .project-card-1 .project-card-gg-hero-img,
+  .project-card-2 .project-card-gg-hero-img,
   .project-card-4 .project-card-gg-hero-img {
     max-height: min(22rem, 70vw);
   }
@@ -574,6 +578,8 @@ a {
 
 .project-card-1 a:hover .project-card-thumb-overlay,
 .project-card-1 a:focus-visible .project-card-thumb-overlay,
+.project-card-2 a:hover .project-card-thumb-overlay,
+.project-card-2 a:focus-visible .project-card-thumb-overlay,
 .project-card-4 a:hover .project-card-thumb-overlay,
 .project-card-4 a:focus-visible .project-card-thumb-overlay {
   opacity: 1;
