@@ -550,6 +550,23 @@ a {
   object-position: center;
 }
 
+/* Dopamine home card: white field and a smaller bottle, matching the design */
+.project-card-2 .project-card-topbox,
+.project-card-2 .project-card-topbox--gg-thumb {
+  background: #fff;
+}
+
+.project-card-2 .project-card-topbox--gg-thumb {
+  padding: 2.75rem 2.5rem;
+}
+
+.project-card-2 .project-card-gg-hero-img {
+  width: auto;
+  max-width: 78%;
+  max-height: 18rem;
+  margin-inline: auto;
+}
+
 @media (max-width: 47.9375em) {
   .project-card-topbox {
     min-height: clamp(14rem, 72vw, 22rem);
@@ -564,9 +581,17 @@ a {
   }
 
   .project-card-1 .project-card-gg-hero-img,
-  .project-card-2 .project-card-gg-hero-img,
   .project-card-4 .project-card-gg-hero-img {
     max-height: min(22rem, 70vw);
+  }
+
+  .project-card-2 .project-card-topbox--gg-thumb {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .project-card-2 .project-card-gg-hero-img {
+    max-width: 82%;
+    max-height: min(16rem, 58vw);
   }
 
   .project-card-thumb-overlay-title {
